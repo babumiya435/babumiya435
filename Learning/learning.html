@@ -5,9 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Learning</title>
-    <script src="learning.js"></script>
+    <script type="text/javascript" src="learning.js" async>
+        // async ---> is used to parse html and download the js simultaniously and executes the js once html loaded.
+        // defer ---> parsing & downloading will be parellel once js downloaded it will immidiatly executes js till stops parsing.
+        // console.log("inside html file");
+        // either code inside script tag gets or the souced .js file exected not both
+        // with async or defer we will be able to read/get all the element references of html
+    </script>
 </head>
 <body>
-    
+    <div id = "basic">Back to Learning</div>
+    <div id = "data">
+        
+    </div>
 </body>
 </html>
