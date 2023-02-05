@@ -7,6 +7,7 @@ FILES:
 	learning-branch
 	learning.html
 	learning.js
+
 GIT COMMANDS USED:
 	git clone
 	git pull
@@ -14,3 +15,59 @@ GIT COMMANDS USED:
 	git add .
 	git commit -m "message"
 	git push origin learning-branch
+
+Ways to include javascript in html:
+	https://stackoverflow.com/questions/436411/where-should-i-put-script-tags-in-html-markup
+	https://www.w3schools.com/tags/tag_script.asp
+	<script typr = "text/javascript" src = "../../learning.js"></script>
+	<script type = "text/javascript"\>
+		console.log("inside html");
+	</script>
+	<!DOCTYPE html>
+	<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning</title>
+    <script type="text/javascript" src="learning.js" async>
+        // async ---> is used to parse html and download the js simultaniously and executes the js once html loaded.
+        // defer ---> parsing & downloading will be parellel once js downloaded it will immidiatly executes js till stops parsing.
+        // console.log("inside html file");
+        // either code inside script tag gets or the souced .js file exected not both
+        // with async or defer we will be able to read/get all the element references of html
+    </script>
+</head>
+<body>
+    <div id = "basic">Back to Learning</div>
+    <div id = "data">
+        
+    </div>
+</body>
+</html>
+
+console.log("Target 5");
+console.log("inside js file");
+var data = [];
+function createData(n) {
+    if(!n){
+        return null;
+    }
+    for (let i = 0; i < n; i++) {
+        let d = {
+            fName : "Sameer",
+            lName : "Mohammad",
+            age : 28
+        }
+        data.push(d);
+    }
+}
+createData(10);
+let ele = document.getElementById("data");
+ele.innerHTML = data[0].fName;
+console.log(data);
+console.log(ele);
+
+
+	
