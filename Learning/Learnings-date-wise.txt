@@ -1,0 +1,16 @@
+2-5-2023:
+
+1. created git repo and branch and added some js code.
+2. pushed some code to git repo
+
+FILES:
+	learning-branch
+	learning.html
+	learning.js
+GIT COMMANDS USED:
+	git clone
+	git pull
+	git status
+	git add .
+	git commit -m "message"
+	git push origin learning-branch
