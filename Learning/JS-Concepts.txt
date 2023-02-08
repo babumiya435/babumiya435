@@ -1,0 +1,40 @@
+
+https://madasamy.medium.com/15-javascript-concepts-that-every-nodejs-programmer-must-to-know-6894f5157cb7
+https://github.com/leonardomso/33-js-concepts#readme
+
+16. this --> 2
+1. JavaScript Prototype & Prototypical inheritance --> 2
+
+2. JavaScript(ES6) Class --> 3
+
+3. IIFE --> 2
+
+4.understanding Scope: --> 3
+
+5. JavaScript Closures --> 4
+
+6. The Module Pattern -->
+
+7. Hoisting: --> 3
+
+8. Currying:-->
+
+9. Memoization:-->
+
+11. The apply, call, and bind, reduce, fetch,filter.amp etc methods:--> 3
+
+11. Polymorphism in JavaScript:-->
+
+12. Asynchronous Js :--> 3
+
+13. Callback Function:--> 4
+
+14. Understand Promises :--> 4
+
+15. Async & Await:--> 4
+The event loop
+Recursion
+Generators --> 2
+
+https://overapi.com/javascript
+
