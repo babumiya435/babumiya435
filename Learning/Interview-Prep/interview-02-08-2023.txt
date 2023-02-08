@@ -1,0 +1,36 @@
+HTML:
+
+1.Semantic tags in html.
+2.meta tags
+
+CSS:
+
+1.Pseudo calsses / elements
+
+JS:
+
+1.Arrow fn vs Normal fn
+2.Map , filter, reduce methods
+3.Call back and call back hell
+4.Hoisting with example
+5.Virtual dom vs real dom
+6.Event loop , call stack, stack queue
+7.promise, settimeout
+8.this keyword
+9.call, bind, apply
+
+React:
+
+1.Hooks
+2.Pure component
+3.Controlled vs uncontrolled component
+4.what is heigher order component
+5.problem drilling
+6.passing data from child to parent vise versa
+7.Redux
+8.Life cycle hooks
+
+Angular:
+
+1.passing data from child to parent vise versa
+2.Life cycle hooks
