@@ -2,7 +2,6 @@
     width: fit-content;
 }
 .logo {
-    background: left / cover url('/media/examples/puppy-header-logo.jpg');
     display: flex;
     height: 120px;
     align-items: center;
@@ -58,3 +57,12 @@ nav {
     font-weight: bold;
     padding: 0 3px;
 }
+/* article.fst p:first-child {
+    color: #ff0083;
+} */
+article p:first-of-type::first-letter {
+    color: #ff0083;
+}
+/* article.fst p:first-child::first-line {
+    color: #ff0083;
+} */

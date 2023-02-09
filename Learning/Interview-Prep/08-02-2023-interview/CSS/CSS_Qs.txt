@@ -23,6 +23,50 @@ CSS:
   		font-size: 120%;
   		font-weight: bold;}
 
+	https://www.growingwiththeweb.com/2012/08/pseudo-classes-vs-pseudo-elements.html
+	Pseudo-classes select regular elements but under certain conditions, like when their position relative to siblings or when they’re under a particular state. 
+	Here is a list of pseudo-classes in CSS3:
+		-Dynamic pseudo-classes:
+			:link
+			:visited
+			:hover
+			:active
+			:focus
+		-UI element states pseudo-classes:
+			:enabled
+			:disabled
+			:checked
+		-Structural pseudo-classes:
+			:first-child
+			:nth-child(n)
+			:nth-last-child(n)
+			:nth-of-type(n)
+			:nth-last-of-type(n)
+			:last-child
+			:first-of-type
+			:last-of-type
+			:only-child
+			:only-of-type
+			:root
+			:empty
+		-Other pseudo-classes:
+			:not(x)
+			:target
+			:lang(language)
+
+	Pseudo-elements effectively create new elements that are not specified in the markup of the document and can be manipulated much like a regular element. This introduces huge benefits for creating cool effects with minimal markup, also aiding significantly in keeping the presentation of the document out of the HTML and in CSS where it belongs.
+
+	With the introduction of CSS3 the difference between pseudo-classes and pseudo-elements is a lot more clear as it is now the standard to use double colon (::) on pseudo-elements, however we should be using single colon until certain browsers are phased out (I’m looking at you IE8 and below). Here is a list of pseudo-elements in CSS3:
+		-Here is a list of pseudo-elements in CSS3:
+			::before
+			::after
+			::first-letter
+			::first-line
+		-Animations on pseudo-elements:
+		Unfortunately animations and transitions on pseudo elements are buggy or not implemented at the moment in most browsers.
+
+	https://javascript.plainenglish.io/the-difference-between-pseudo-classes-and-pseudo-elements-of-css-properties-e408fcbd68a0
+
 JS:
 
 1.Arrow fn vs Normal fn
