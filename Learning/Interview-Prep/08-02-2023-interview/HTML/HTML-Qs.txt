@@ -1,0 +1,150 @@
+HTML:
+
+1.Semantic tags in html.
+
+	https://www.w3schools.com/html/html5_semantic_elements.asp
+	Examples of non-semantic elements: <div> and <span> - Tells nothing about its content.
+	Examples of semantic elements: <form>, <table>, and <article> - Clearly defines its content.
+	<article>,<aside>,<details>,<figcaption>,<figure>,<footer>,<header>,<main>,<mark>,<nav>,<section>,<summary>,<time>
+	<figure>
+	  <img src="pic_trulli.jpg" alt="Trulli">
+  	  <figcaption>Fig1. - Trulli, Puglia, Italy.</figcaption>
+	</figure>
+
+	https://www.simplilearn.com/tutorials/html-tutorial/html-semantics
+	The HTML semantics refers to the tags that provide meaning to an HTML page rather than just presentation. It makes HTML more comprehensible by better defining the different sections and layout of web pages
+	These elements clearly define its content. 
+
+	Why Do You Need to Use Semantic Tags in HTML?
+	-The semantic HTML tags help the search engines and other user devices to determine the importance and context of web pages.
+	-The pages made with semantic elements are much easier to read.
+	-It has greater accessibility. It offers a better user experience.
+
+	https://developer.mozilla.org/en-US/docs/Glossary/Semantics
+		-Search engines will consider its contents as important keywords to influence the page's search rankings (see SEO)
+		-Screen readers can use it as a signpost to help visually impaired users navigate a page
+		-Finding blocks of meaningful code is significantly easier than searching through endless divs with or without semantic or namespaced classes
+		-Suggests to the developer the type of data that will be populated
+		-Semantic naming mirrors proper custom element/component naming
+
+	https://www.semrush.com/blog/semantic-html5-guide/
+		-Accessibility(NVDA,JAWS)
+		-SEO(Googlebot)
+	HTML Semantic Tags for Structure
+		-Many semantic HTML tags communicate the layout of a page
+	HTML Semantic Tags for Text
+		-The semantic HTML tags for text are HTML tags that—besides the formatting—also convey the semantic function of the text they contain.
+		-<h1> (heading): The H1 tag marks the top level heading. There’s usually only one H1 heading per page.
+		-<h2> to <h6> (subheadings): The subheadings of various levels of importance. There can be multiple headings of the same level on a single page. 
+		-<p> (paragraph): A standalone paragraph of text.
+		-<a> (anchor): Used to mark up a hyperlink from one page to another.
+		-<ol> (ordered list): A list of items that are displayed in a particular order, starting with bullet points. One <li> (list item) tag contains a single item in the list.
+		-<ul> (unordered list): A list of items that do not need to be displayed in a particular order, starting with ordinal numbers. One <li> (list item) tag contains a single item of the list. 
+		-<q> / <blockquote>: A quotation of the text. Use <blockquote> for long, multi-line quotations and <q> for shorter, inline quotations.
+		-<em> (emphasis): Used for text that should be emphasized.
+		-<strong> (strong emphasis): Used for text that should be strongly emphasized.
+		-<code>: A block of computer code
+
+	<div id="nav"> 
+	<div class="header">
+	<div id="footer">
+
+	<nav>
+	<header>
+	<footer>
+
+
+2.meta tags
+
+	The <meta> tag defines metadata about an HTML document. Metadata is data (information) about data.
+
+	<meta> tags always go inside the <head> element, and are typically used to specify character set, page description, keywords, author of the document, and viewport settings.
+
+	Metadata will not be displayed on the page, but is machine parsable.
+
+	Metadata is used by browsers (how to display content or reload page), search engines (keywords), and other web services.
+
+	There is a method to let web designers take control over the viewport (the user's visible area of a web page), through the <meta> tag (See "Setting The Viewport" example below).
+	<head>
+	 <meta charset="UTF-8">
+	<head>
+		UTF-8 is a character encoding system. It lets you represent characters as ASCII text, while still allowing for international characters, such as Chinese characters. As of the mid 2020s, UTF-8 is one of the most popular encoding systems.
+		https://www.freecodecamp.org/news/what-is-utf-8-character-encoding/#:~:text=UTF%2D8%20is%20a%20character,the%20most%20popular%20encoding%20systems.
+	<head>
+	 <meta name="description" content="Free Web tutorials">
+  	 <meta name="keywords" content="HTML,CSS,XML,JavaScript">
+	<head>
+
+	https://www.tutorialspoint.com/html/html_meta_tags.htm
+	HTML lets you specify metadata - additional important information about a document in a variety of ways. The META elements can be used to include name/value pairs describing properties of the HTML document, such as author, expiry date, a list of keywords, document author etc.
+
+	The <meta> tag is used to provide such additional information. This tag is an empty element and so does not have a closing tag but it carries information within its attributes.
+
+	You can include one or more meta tags in your document based on what information you want to keep in your document but in general, meta tags do not impact physical appearance of the document so from appearance point of view, it does not matter if you include them or not.
+	USES:
+		-Specifying Keywords(SEO)
+			You can use <meta> tag to specify important keywords related to the document and later these keywords are used by the search engines while indexing your webpage for searching purpose.
+			 <meta name = "keywords" content = "HTML, Meta Tags, Metadata" />
+		-Document Description
+			You can use <meta> tag to give a short description about the document. This again can be used by various search engines while indexing your webpage for searching purpose.
+      			<meta name = "description" content = "Learning about Meta Tags." />
+		-Document Revision Date
+			You can use <meta> tag to give information about when last time the document was updated. This information can be used by various web browsers while refreshing your webpage.
+			<meta name = "revised" content = "Tutorialspoint, 3/7/2014" />
+		-Document Refreshing
+			A <meta> tag can be used to specify a duration after which your web page will keep refreshing automatically.
+			If you want your page keep refreshing after every 5 seconds then use the following syntax.
+			<meta http-equiv = "refresh" content = "5" />
+		-Page Redirection
+			Following is an example of redirecting current page to another page after 5 seconds. If you want to redirect page immediately then do not specify content attribute.
+			<meta http-equiv = "refresh" content = "5; url = http://www.tutorialspoint.com" />
+		-Setting Cookies
+			Cookies are data, stored in small text files on your computer and it is exchanged between web browser and web server to keep track of various information based on your web application need.
+			You can use <meta> tag to store cookies on client side and later this information can be used by the Web Server to track a site visitor.
+			<meta http-equiv = "cookie" content = "userid = xyz; expires = Wednesday, 08-Aug-15 23:59:59 GMT;" />
+		-Setting Author Name
+			You can set an author name in a web page using meta tag
+			<meta name = "author" content = "Sameer Mohammad" />
+		-Specify Character Set
+			By default, Web servers and Web browsers use ISO-8859-1 (Latin1) encoding to process Web pages. Following is an example to set UTF-8 encoding −
+			<meta http-equiv = "Content-Type" content = "text/html; charset = UTF-8" />
+			To serve the static page with traditional Chinese characters, the webpage must contain a <meta> tag to set Big5 encoding −
+			<meta http-equiv = "Content-Type" content = "text/html; charset = Big5" />
+		-Specify Page Dimensions
+			It specifies the viewport to control the page dimension and scaling so that our website looks good on all devices. If this tag is present, it indicates that this page is mobile device supported.
+			<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+		https://developers.google.com/search/docs/crawling-indexing/special-tags
+
+
+			
+CSS:
+
+1.Pseudo calsses / elements
+
+JS:
+
+1.Arrow fn vs Normal fn
+2.Map , filter, reduce methods
+3.Call back and call back hell
+4.Hoisting with example
+5.Virtual dom vs real dom
+6.Event loop , call stack, stack queue
+7.promise, settimeout
+8.this keyword
+9.call, bind, apply
+
+React:
+
+1.Hooks
+2.Pure component
+3.Controlled vs uncontrolled component
+4.what is heigher order component
+5.problem drilling
+6.passing data from child to parent vise versa
+7.Redux
+8.Life cycle hooks
+
+Angular:
+
+1.passing data from child to parent vise versa
+2.Life cycle hooks
