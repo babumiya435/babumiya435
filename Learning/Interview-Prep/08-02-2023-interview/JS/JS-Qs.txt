@@ -1,0 +1,108 @@
+JS:
+
+1.Arrow function vs Normal function in JS
+	https://betterprogramming.pub/difference-between-regular-functions-and-arrow-functions-f65639aba256
+	1. Syntax
+	// (param1, param2, paramN) => expression
+	// ES5
+	var add = function(x, y) {
+  		return x + y;
+	};
+	// ES6
+	let add = (x, y) => { return x + y };
+	2. Arguments binding
+		-Arrow functions can never have duplicate named parameters, whether in strict or non-strict mode.
+		-Arrow functions do not have an arguments binding. However, they have access to the arguments object of the closest non-arrow parent function. Named and rest parameters are heavily relied upon to capture the arguments passed to arrow functions.
+		-Arrow functions can never be used as constructor functions. Hence, they can never be invoked with the new keyword. As such, a prototype property does not exist for an arrow function.
+		-The value of this inside an arrow function remains the same throughout the lifecycle of the function and is always bound to the value of this in the closest non-arrow parent function.
+	3. Use of this keyword:
+	Unlike regular functions, arrow functions do not have their own this. The value of this inside an arrow function remains the same throughout the lifecycle of the function and is always bound to the value of this in the closest non-arrow parent function.
+	const me = {
+    			name : "Sameer",
+    			printName : ()=>{
+        			return `My name is ${this.name}`  // no this reference inside normal function
+    			},
+    			printNameRegular: function() {
+        			return `My name is ${this.name}`  // this reference is availble inside normal function
+    			}
+		}
+		console.log(me.printName());
+		console.log(me.printNameRegular());
+	4. Using new keyword:
+	Regular functions created using function declarations or expressions are constructible and callable. Since regular functions are constructible, they can be called using the new keyword.
+	However, the arrow functions are only callable and not constructible, i.e arrow functions can never be used as constructor functions. Hence, they can never be invoked with the new keyword.
+	const constructorNormal = function(a,b){
+    					console.log(a + b);
+				}
+	const constructorArrow = (a,b)=>{
+    					console.log(a + b);
+				}
+	const obj1 = new constructorNormal(2,3);
+	const obj2 = new constructorArrow(2,3);
+	console.log(obj1);  // normal method is both callable and constructable
+	console.log(obj2);  // arrow method only callable not constructable
+
+	5. No duplicate named parameters:
+	Arrow functions can never have duplicate named parameters, whether in strict or non-strict mode.
+	It means that the following is valid JavaScript:
+		function add(x, x){}
+	It is not, however, when using strict mode:
+		'use strict';
+		function add(x, x){}
+		// SyntaxError: duplicate formal argument x
+	With arrow functions, duplicate named arguments are always, regardless of strict or non-strict mode, invalid.
+		(x, x) => {}
+		// SyntaxError: duplicate argument names not allowed in this context
+	-Syntax
+	-No arguments (arguments are array-like objects) (we can use rest parameter way of accessing)
+	-No prototype object for the Arrow function
+	-Cannot be invoked with a new keyword (Not a constructor function)
+	-No own this (call, apply & bind won't work as expected)
+	-It cannot be used as a Generator function
+	-Duplicate-named parameters are not allowed
+	
+	const norm = function(a){
+    		return a + this.b;
+	}
+	const arro = (a)=>{
+    		console.log(a);
+   		return a + this.b;
+	}
+	let res = norm.call(data,5);
+	console.log(res);
+	let res1 = arro.call(data,5);
+	console.log(res1);
+	let res2 = arro.apply(data,[6]);
+	console.log(res2);
+	let add2 = arro.bind(data,2);
+	console.log(add2());
+
+	https://blog.bitsrc.io/arrow-functions-vs-regular-functions-in-javascript-458ccd863bc1
+
+		
+	
+
+2.Map , filter, reduce methods
+3.Call back and call back hell
+4.Hoisting with example
+5.Virtual dom vs real dom
+6.Event loop , call stack, stack queue
+7.promise, settimeout
+8.this keyword
+9.call, bind, apply
+
+React:
+
+1.Hooks
+2.Pure component
+3.Controlled vs uncontrolled component
+4.what is heigher order component
+5.problem drilling
+6.passing data from child to parent vise versa
+7.Redux
+8.Life cycle hooks
+
+Angular:
+
+1.passing data from child to parent vise versa
+2.Life cycle hooks
