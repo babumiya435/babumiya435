@@ -83,6 +83,26 @@ JS:
 	
 
 2.Map , filter, reduce methods
+
+	Higher Order Functions:
+		A higher-order function is a function that takes one or more functions as arguments or returns a function as its result. map, filter, andreduce are all higher order functions, which take a function as an argument.
+		All the functions are part of the JavaScript Array prototype which means they must be called directly on an array.
+
+		const arr = [1, 2, 3]
+		arr.map()
+		arr.filter()
+		arr.reduce()
+		When we are using map,filter, and reduce, we cannot:
+		-break the loop
+		-use continue
+	map → Executes a function on each element of an array:
+		Every element of the array is passed to the callback function and returns a new array with the same length.
+		When to use map: If we want to perform the same operation/transformation on each element of the array and get back a new array of the same length with the transformed values.
+	filter → Remove items which don’t satisfy a condition:
+		Every element of the array is passed to the callback function. On each iteration, if the callback returns true, then that element will be added to the new array, otherwise, it is not added to the new array.
+	Reduce → Creates a single value from elements of Array:
+		While using reduce, we need to declare the initial value of accumulator(final result). On each iteration, inside the callback we perform some operation and that will be added to the accumulator.
+
 3.Call back and call back hell
 4.Hoisting with example
 5.Virtual dom vs real dom
