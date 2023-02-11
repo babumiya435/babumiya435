@@ -26,7 +26,9 @@ let passed = users.filter((user)=>{
 })
 console.log(passed);
 let team = passed.reduce((acc,user)=>{
-    acc.push(user);
+    if(user.marks > 70){
+        acc.push(user);
+    }
     return acc;
 },[])
 
