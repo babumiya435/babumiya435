@@ -1,5 +1,6 @@
 JS:
 
+https://jsbin.com/fazurusufi/3/edit?js,console
 1.Arrow function vs Normal function in JS
 	https://betterprogramming.pub/difference-between-regular-functions-and-arrow-functions-f65639aba256
 	1. Syntax
@@ -178,7 +179,7 @@ JS:
 	});
 	Descending order:
 	students.sort((a, b) => b.age - a.age);
-	https://www.youtube.com/watch?v=zdp0zrpKzIE
+https://www.youtube.com/watch?v=zdp0zrpKzIE
 
 3.Call back and call back hell
 4.Hoisting with example
