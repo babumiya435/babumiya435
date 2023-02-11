@@ -176,18 +176,3 @@ JS:
 8.this keyword
 9.call, bind, apply
 
-React:
-
-1.Hooks
-2.Pure component
-3.Controlled vs uncontrolled component
-4.what is heigher order component
-5.problem drilling
-6.passing data from child to parent vise versa
-7.Redux
-8.Life cycle hooks
-
-Angular:
-
-1.passing data from child to parent vise versa
-2.Life cycle hooks
