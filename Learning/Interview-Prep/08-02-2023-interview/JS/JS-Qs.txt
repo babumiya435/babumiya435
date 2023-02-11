@@ -102,6 +102,71 @@ JS:
 		Every element of the array is passed to the callback function. On each iteration, if the callback returns true, then that element will be added to the new array, otherwise, it is not added to the new array.
 	Reduce → Creates a single value from elements of Array:
 		While using reduce, we need to declare the initial value of accumulator(final result). On each iteration, inside the callback we perform some operation and that will be added to the accumulator.
+	let users = [
+        {
+            userName : "student1"
+        },
+        {
+            userName : "student2"
+        },
+        {
+            userName : "student3"
+        },
+        {
+            userName : "student4"
+        }
+    	]
+	console.log(users);
+	let marks = users.map((user)=>{
+    	let marks = Math.random() * 100;
+    	user.marks = marks;
+    	return user;
+	})
+	console.log(marks);
+	let passed = users.filter((user)=>{
+    	return user.marks > 50;
+	})
+	console.log(passed);
+	let team = passed.reduce((acc,user)=>{
+    	if(user.marks > 70){
+        	acc.push(user);
+    	}
+    	return acc;
+	},[])
+
+	console.log(team);
+
+	https://code.tutsplus.com/tutorials/how-to-use-map-filter-reduce-in-javascript--cms-26209
+	Gotchas: (.map)
+	The callback you pass to map must have an explicit return statement, or map will spit out an array full of undefined. It's not hard to remember to include a return value, but it's not hard to forget. 
+
+	If you do forget, map won't complain. Instead, it'll quietly hand back an array full of nothing. Silent errors like that can be surprisingly hard to debug. 
+
+	Fortunately, this is the only gotcha with map. But it's a common enough pitfall that I'm obliged to emphasize: Always make sure your callback contains a return statement!
+	
+	Gotchas: (.filter):
+	The callback you pass to map has to include a return statement if you want it to function properly. With filter, you also have to include a return statement (unless you're using arrow functions), and you must make sure it returns a boolean value.
+
+	If you forget your return statement, your callback will return undefined, which filter will unhelpfully coerce to false. Instead of throwing an error, it will silently return an empty array! 
+
+	If you go the other route and return something that's isn't explicitly true or false, then filter will try to figure out what you meant by applying JavaScript's type coercion rules. More often than not, this is a bug. And, just like forgetting your return statement, it'll be a silent one. 
+
+	Always make sure your callbacks include an explicit return statement. And always make sure your callbacks in filter return true or false. Your sanity will thank you
+
+	Gotchas: (.reduce)
+	The three big gotchas with reduce are:
+
+	forgetting to return
+	forgetting an initial value
+	expecting an array when reduce returns a single value
+
+	Fortunately, the first two are easy to avoid. Deciding what your initial value should be depends on what you're doing, but you'll get the hang of it quickly.
+
+	The last one might seem a bit strange. If reduce only ever returns a single value, why would you expect an array?
+
+	There are a few good reasons for that. First, reduce always returns a single value, not always a single number. If you reduce an array of arrays, for instance, it will return a single array. If you're in the habit of reducing arrays, it would be fair to expect that an array containing a single item wouldn't be a special case.
+
+	Second, if reduce did return an array with a single value, it would naturally play nice with map and filter, and other functions on arrays that you're likely to be using with it.
 
 3.Call back and call back hell
 4.Hoisting with example
