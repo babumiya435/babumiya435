@@ -167,6 +167,18 @@ JS:
 	There are a few good reasons for that. First, reduce always returns a single value, not always a single number. If you reduce an array of arrays, for instance, it will return a single array. If you're in the habit of reducing arrays, it would be fair to expect that an array containing a single item wouldn't be a special case.
 
 	Second, if reduce did return an array with a single value, it would naturally play nice with map and filter, and other functions on arrays that you're likely to be using with it.
+	
+	.sort():
+	https://dev.to/ivanadokic/javascript-array-methods-filter-map-reduce-and-sort-32m5
+	The sort() method sorts the elements of an array in place and returns the sorted array.
+	arr.sort([compareFunction])
+	Ascending order:
+	students.sort((a, b) => {
+    		return a.age - b.age;
+	});
+	Descending order:
+	students.sort((a, b) => b.age - a.age);
+	https://www.youtube.com/watch?v=zdp0zrpKzIE
 
 3.Call back and call back hell
 4.Hoisting with example
