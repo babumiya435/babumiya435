@@ -78,3 +78,26 @@ getGreeting1("Sameer",function (cbName,cb1){
 console.log("After greeting");
 console.log("end");
 console.log("------------ASynchronous CODE-----------");
+
+function One(two){
+    console.log("START");
+    console.log("ONE")
+    two(Three);
+}
+function Two(three){
+    console.log("TWO");
+    three(Four);
+}
+function Three(four){
+    console.log("THREE");
+    four(Five);
+}
+function Four(five){
+    console.log("FOUR");
+    five()
+}
+function Five(){
+    console.log("FIVE");
+    console.log("END")
+}
+One(Two);
