@@ -56,14 +56,25 @@ console.log("------------ASynchronous CODE-----------");
 console.log("Start");
 function getGreeting1(name,cb){
     setTimeout(()=>{
-        cb(name);
+        cb(name,function (name){ console.log(`Hello ${name}`)});
     },5000);
 }
-function cb1(cbName){
+function cb1(cbName,cb){
+    console.log(`Hello ${cbName}`)
+    cb(cbName)
+}
+function cb2(cbName){
+    console.log(`Hello ${cbName}`)
+}
+function cb3(cbName){
     console.log(`Hello ${cbName}`)
 }
 console.log("Before greeting");
-getGreeting1("Sameer",cb1);
+getGreeting1("Sameer",function (cbName,cb1){
+        console.log(`Hello ${cbName}`);
+        cb1(cbName);
+    }
+);
 console.log("After greeting");
 console.log("end");
 console.log("------------ASynchronous CODE-----------");
