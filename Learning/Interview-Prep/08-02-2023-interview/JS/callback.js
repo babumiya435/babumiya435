@@ -26,5 +26,44 @@ const mainFunction = (callback)=>{
         callback(1)
     },10000);
 }
-mainFunction(even);
-mainFunction(odd);
+// mainFunction(even);
+// mainFunction(odd);
+
+// const button = document.getElementById('myName');
+// function callback(){
+// console.log("My Name is Sameer");
+// }
+
+// button.addEventListener('click',callback);
+
+// synchronous call back example
+console.log("------------Synchronous CODE-----------");
+console.log("Start");
+function getGreeting(name,cb){
+    cb(name);
+}
+console.log("Before Greeting");
+function cb(cbName){
+    console.log(`Hello ${cbName}`);
+}
+getGreeting("Sameer",cb);
+console.log("After Greeting");
+console.log("End");
+console.log("------------Synchronous CODE-----------");
+
+// Asynchronous call back example
+console.log("------------ASynchronous CODE-----------");
+console.log("Start");
+function getGreeting1(name,cb){
+    setTimeout(()=>{
+        cb(name);
+    },5000);
+}
+function cb1(cbName){
+    console.log(`Hello ${cbName}`)
+}
+console.log("Before greeting");
+getGreeting1("Sameer",cb1);
+console.log("After greeting");
+console.log("end");
+console.log("------------ASynchronous CODE-----------");

@@ -181,7 +181,28 @@ https://jsbin.com/fazurusufi/3/edit?js,console
 	students.sort((a, b) => b.age - a.age);
 	Akshyai Saini : https://www.youtube.com/watch?v=zdp0zrpKzIE
 
-3.Call back and call back hell
+
+
+3.Call back and call back hell:
+	https://maximorlov.com/synchronous-vs-asynchronous-callbacks/#:~:text=The%20main%20difference%20between%20synchronous,like%20PHP%2C%20Ruby%20or%20Java.
+	ability to pass the function as parameter to the other function and it can be called later point in the execution is call call back.
+	Uses:
+	-for making asynchronous calls
+	-bringing modularity in the code(making specific tasks seperately);
+	-
+	(synchronous callback function):
+	synchronous callbacks are executed within the program's current context and there's no interaction with the outside world. You'll find synchronous callbacks in functional programming where, for example, the callback is called for each item in a collection (eg. .filter(), .map(), .reduce() etc.). Most prototype methods in the JavaScript language are synchronous.
+	A callback's primary purpose is to execute code in response to an event. These events might be user-initiated, such as mouse clicks or typing. With a callback, you may instruct your application to "execute this code every time the user clicks a key on the keyboard."
+	const button = document.getElementById('myName');
+	function callback(){
+		console.log("My Name is Sameer");
+	}
+	(Asynchronous Callback Function):
+	Asynchronous functions are usually the ones that do a network request, wait for an I/O operation (like a mouse click), interact with the filesystem or send a query to a database. What these functions have in common is that they interact with something outside the current program and your application is left waiting until a response comes back.
+	
+	
+
+button.addEventListener('click',callback);
 4.Hoisting with example
 5.Virtual dom vs real dom
 6.Event loop , call stack, stack queue
