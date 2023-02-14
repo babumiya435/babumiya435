@@ -200,7 +200,23 @@ https://jsbin.com/fazurusufi/3/edit?js,console
 	(Asynchronous Callback Function):
 	Asynchronous functions are usually the ones that do a network request, wait for an I/O operation (like a mouse click), interact with the filesystem or send a query to a database. What these functions have in common is that they interact with something outside the current program and your application is left waiting until a response comes back.
 	
+	To avoid call back hell confusion we can do following things: 
+	Write comments
+	Split functions into smaller functions
+	Using Promises
+	Using Async/await
 	
+	getUser(1, (user) => {
+	//     console.log("User", user);
+	//     getRepositories(user.githubUsername, (repos) => {
+	//         console.log(repos);
+	//         getCommits(repos[0], (commits) => {
+	//             console.log(commits);
+	//             // Callback Hell ("-_-)
+	//         })
+	//     })
+	// })
+
 
 button.addEventListener('click',callback);
 4.Hoisting with example

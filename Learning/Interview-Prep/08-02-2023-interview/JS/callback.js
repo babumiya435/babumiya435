@@ -132,3 +132,14 @@ let promise = new Promise((res,rej)=>{
 // console.log(promise);
 
 // 4. Using Async/await
+
+// getUser(1, (user) => {
+//     console.log("User", user);
+//     getRepositories(user.githubUsername, (repos) => {
+//         console.log(repos);
+//         getCommits(repos[0], (commits) => {
+//             console.log(commits);
+//             // Callback Hell ("-_-)
+//         })
+//     })
+// })
