@@ -79,49 +79,56 @@ function cb3(cbName){
 // console.log("end");
 // console.log("------------ASynchronous CODE-----------");
 
-function One(two){
-    console.log("START");
-    console.log("ONE")
-    //calling second function
-    two(Three);
+// function One(two){
+//     console.log("START");
+//     console.log("ONE")
+//     //calling second function
+//     two(Three);
+// }
+async function One(two){
+        console.log("ONE");
+        await Two();
+        await Three();
+        await Four();
+        await Five();
 }
 function Two(three){
     console.log("TWO");
     //calling third function
-    three(Four);
+    // three(Four);
 }
 function Three(four){
     console.log("THREE");
     //calling fourth function
-    four(Five);
+    // four(Five);
 }
 function Four(five){
     console.log("FOUR");
     //calling fifth function
-    five()
+    // five()
 }
 function Five(){
     console.log("FIVE");
     console.log("END")
 }
 //calling first function
-// One(Two);
+One(Two);
 // Possible solutions to call back hell
 // 1. Write comments
 // 2. Split functions into smaller functions --> functions One,Two,Three,Four,Five
 // 3. Using Promises 
+// 4. async await
 // Promise is an object which represents eventual completion/failure of asynchronous call.
 let promise = new Promise((res,rej)=>{
     setTimeout(()=>{
-        rej("rejected");
         res("resolved"); 
     },1000)
 })
-promise.then((response)=>{
-    console.log("Resolved data : " + response);
-}).catch((error)=>{
-    console.log("Rejection Error : " + error)
-})
-console.log(promise);
+// promise.then((response)=>{
+//     console.log("Resolved data : " + response);
+// }).catch((error)=>{
+//     console.log("Rejection Error : " + error)
+// })
+// console.log(promise);
 
 // 4. Using Async/await
