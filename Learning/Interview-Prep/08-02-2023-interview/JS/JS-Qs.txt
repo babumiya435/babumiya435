@@ -224,9 +224,39 @@ button.addEventListener('click',callback);
 	In colloquial terms, any of the following behaviors may be regarded as hoisting:
 	Variable hoisting:
 		var-declared variables are hoisted, meaning you can refer to the variable anywhere in its scope, even if its declaration isn't reached yet. You can see var declarations as being "lifted" to the top of its function or global scope. However, if you access a variable before it's declared, the value is always undefined, because only its declaration is hoisted, but not its initialization.
+		Unlike var declarations, which only hoist the declaration but not its value, function declarations are hoisted entirely — you can safely call the function anywhere in its scope. See the hoisting glossary entry for more discussion.
 		
-5.Virtual dom vs real dom
+5.Virtual dom vs real dom:
+	https://medium.com/devinder/react-virtual-dom-vs-real-dom-23749ff7adc9
+	(DOM):
+	The DOM is an abstraction of a page’s HTML structure
+	It takes HTML elements and wraps them in an object with a tree-structure — maintaining the parent/child relationships of those nested HTML elements. This provides an API that allows us to traverse nodes (HTML elements) and manipulate them in a number of ways — such as adding nodes, removing nodes, editing a node’s content, etc.
+	Real Dom: is an object which represents the tree like structure of the html document.
+	Virtual Dom : is an virtually created copy of real Dom object which is used for data - comparision and real dom change if must.
+	Now it’s common to have a thousands node in a single SPA. So repaint the whole page for each change is very-very expensive.
+	Ideally, we’d like to only re-render items that receive updates, leaving the rest of the items as-is.
+	Knowing when to update:
+		-Dirty Checking (slow) — Checks through all node’s data at a regular interval to see if there have been any changes. This is inefficient because it requires traversing every single node recursively to make sure it’s data isn’t “dirty” (out of date). This was used in AngularJS 1.x.
+		-Observable (fast) — Components are responsible for listening to when an update takes place. Since the data is saved on the state, components can simply listen to events on the state and if there is an update, it can re-render to the UI. React uses it.
+	(Virtual DOM):
+	The Virtual DOM is a light-weight abstraction of the DOM. You can think of it as a copy of the DOM, that can be updated without affecting the actual DOM. It has all the same properties as the real DOM object, but doesn’t have the ability to write to the screen like the real DOM. The virtual DOM gains it’s speed and efficiency from the fact that it’s lightweight. In fact, a new virtual DOM is created after every re-render.
+	Reconciliation is a process to compare and keep in sync the two files (Real and Virtual DOM). Diffing algorithm is a technique of reconciliation which is used by React.
+	Is the Shadow DOM the same as the Virtual DOM?
+		-No, they are different. The Shadow DOM is a browser technology designed primarily for scoping variables and CSS in web components. The virtual DOM is a concept implemented by libraries in JavaScript on top of browser APIs
+
 6.Event loop , call stack, stack queue
+	https://medium.com/@Rahulx1/understanding-event-loop-call-stack-event-job-queue-in-javascript-63dcd2c71ecd
+	Stack: This is where all your javascript code gets pushed and executed one by one as the interpreter reads your program, and gets popped out once the execution is done. If your statement is asynchronous: setTimeout, ajax(), promise, or click event, then that code gets forwarded to Event table, this table is responsible for moving your asynchronous code to callback/event queue after specified time.
+	Heap: This is where all the memory allocation happens for your variables, that you have defined in your program.
+	Callback Queue: This is where your asynchronous code gets pushed to, and waits for the execution
+	Event Loop: Then comes the Event Loop, which keeps running continuously and checks the Main stack, if it has any frames to execute, if not then it checks Callback queue, if Callback queue has codes to execute then it pops the message from it to the Main Stack for the execution.
+	Job Queue: Apart from Callback Queue, browsers have introduced one more queue which is “Job Queue”, reserved only for new Promise() functionality. So when you use promises in your code, you add .then() method, which is a callback method. These `thenable` methods are added to Job Queue once the promise has returned/resolved, and then gets executed.
+
+	Message no. 1: Sync
+	Message no. 5: Sync
+	Message no. 3: 1st Promise
+	Message no. 4: 2nd Promise
+	Message no. 2: setTimeout
 7.promise, settimeout
 8.this keyword
 9.call, bind, apply
