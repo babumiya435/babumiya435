@@ -219,7 +219,12 @@ https://jsbin.com/fazurusufi/3/edit?js,console
 
 
 button.addEventListener('click',callback);
-4.Hoisting with example
+4.Hoisting with example:
+	JavaScript Hoisting refers to the process whereby the interpreter appears to move the declaration of functions, variables or classes to the top of their scope, prior to execution of the code.
+	In colloquial terms, any of the following behaviors may be regarded as hoisting:
+	Variable hoisting:
+		var-declared variables are hoisted, meaning you can refer to the variable anywhere in its scope, even if its declaration isn't reached yet. You can see var declarations as being "lifted" to the top of its function or global scope. However, if you access a variable before it's declared, the value is always undefined, because only its declaration is hoisted, but not its initialization.
+		
 5.Virtual dom vs real dom
 6.Event loop , call stack, stack queue
 7.promise, settimeout
