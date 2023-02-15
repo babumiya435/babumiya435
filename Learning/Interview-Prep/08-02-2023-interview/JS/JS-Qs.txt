@@ -252,11 +252,25 @@ button.addEventListener('click',callback);
 	Event Loop: Then comes the Event Loop, which keeps running continuously and checks the Main stack, if it has any frames to execute, if not then it checks Callback queue, if Callback queue has codes to execute then it pops the message from it to the Main Stack for the execution.
 	Job Queue: Apart from Callback Queue, browsers have introduced one more queue which is “Job Queue”, reserved only for new Promise() functionality. So when you use promises in your code, you add .then() method, which is a callback method. These `thenable` methods are added to Job Queue once the promise has returned/resolved, and then gets executed.
 
-	Message no. 1: Sync
-	Message no. 5: Sync
-	Message no. 3: 1st Promise
-	Message no. 4: 2nd Promise
-	Message no. 2: setTimeout
+	console.log('Message no. 1: Sync');
+	setTimeout(function() {
+   	console.log('Message no. 2: setTimeout');
+	}, 0);
+	var promise = new Promise(function(resolve, reject) {
+   	resolve();
+	});
+	promise.then(function(resolve) {
+   	console.log('Message no. 3: 1st Promise');
+	})
+	.then(function(resolve) {
+   	console.log('Message no. 4: 2nd Promise');
+	});
+	console.log('Message no. 5: Sync');
+	// Message no. 1: Sync
+	// Message no. 5: Sync
+	// Message no. 3: 1st Promise
+	// Message no. 4: 2nd Promise
+	// Message no. 2: setTimeout
 7.promise, settimeout
 8.this keyword
 9.call, bind, apply

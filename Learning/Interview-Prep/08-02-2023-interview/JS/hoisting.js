@@ -15,3 +15,5 @@ console.log(hoist)
 function hoist(){
     return "hoisted declaration and its defination/value"
 }
+
+// heap: memory location is responsible for allocating memory to the variales and functions and promises and set time out.
