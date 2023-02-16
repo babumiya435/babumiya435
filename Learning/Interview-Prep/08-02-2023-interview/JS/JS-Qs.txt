@@ -278,6 +278,18 @@ button.addEventListener('click',callback);
 	Every time a script or function calls a function, it's added to the top of the call stack. Every time the function exits, the interpreter removes it from the call stack.
 	A function either exits through a return statement or by reaching the end of the scope.
 	The order in which the stack processes each function call follows the LIFO principle (Last In, First Out).
+	-1. Global Execution Context(Heap, call stack,web api, event loop call back queue)
+	-2. Functional Execution Context
+	HEAP-Memory Allocation in JS:
+		-https://felixgerschau.com/javascript-memory-management/
+		Allocating memory is the process of reserving space in memory, while releasing memory frees up space, ready to be used for another purpose.
+			Allocate memory:
+			JavaScript takes care of this for us: It allocates the memory that we will need for the object we created
+			Use memory:
+			Using memory is something we do explicitly in our code: Reading and writing to memory is nothing else than reading or writing from or to a variable.
+			Release memory:
+			This step is handled as well by the JavaScript engine. Once the allocated memory is released, it can be used for a new purpose.
+		"Objects" in the context of memory management doesn't only include JS objects but also functions and function scopes.
 7.promise, settimeout
 8.this keyword
 9.call, bind, apply
