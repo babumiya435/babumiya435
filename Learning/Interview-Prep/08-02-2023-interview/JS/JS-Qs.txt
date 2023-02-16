@@ -271,6 +271,13 @@ button.addEventListener('click',callback);
 	// Message no. 3: 1st Promise
 	// Message no. 4: 2nd Promise
 	// Message no. 2: setTimeout
+	CALL STACK:
+	-https://felixgerschau.com/javascript-event-loop-call-stack/
+	JavaScript can do one single thing at a time because it has only one call stack.
+	The call stack is a mechanism that helps the JavaScript interpreter to keep track of the functions that a script calls.
+	Every time a script or function calls a function, it's added to the top of the call stack. Every time the function exits, the interpreter removes it from the call stack.
+	A function either exits through a return statement or by reaching the end of the scope.
+	The order in which the stack processes each function call follows the LIFO principle (Last In, First Out).
 7.promise, settimeout
 8.this keyword
 9.call, bind, apply
