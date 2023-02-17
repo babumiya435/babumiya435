@@ -290,6 +290,22 @@ button.addEventListener('click',callback);
 			Release memory:
 			This step is handled as well by the JavaScript engine. Once the allocated memory is released, it can be used for a new purpose.
 		"Objects" in the context of memory management doesn't only include JS objects but also functions and function scopes.
+	https://felixgerschau.com/javascript-event-loop-call-stack/
+	https://felixgerschau.com/javascript-memory-management/
+	Web APIs: https://felixgerschau.com/web-capabilities-project-fugu-google/
+		They enable you to make AJAX requests or manipulate the DOM, but also a range of other things, like geo-tracking, accessing local storage, service workers, and more.
+	Callback queue:
+		With the features of web APIs, we're now able to do things concurrently outside of the JavaScript interpreter. But what happens if we want our JavaScript code to react to the result of a Web API, like an AJAX request, for instance?
+		That's where callbacks come into play. Through them, web APIs allow us to run code after the execution of the API call has finished.
+		Unlike the call stack, the callback queue follows the FIFO order (First In, First Out), meaning that the calls are processed in the same order they've been added to the queue.
+	Event loop:
+		The JavaScript event loop takes the first call in the callback queue and adds it to the call stack as soon as it's empty.
+		window.onscroll = () => console.log('scroll');
+		
+	Job queue and asynchronous code:
+		In addition to the callback queue, there's another queue that exclusively accepts promises—the job queue.
+		The job queue, also known as the promise queue, has priority over the callback queue, just like a fast-track queue at an amusement park.
+		
 7.promise, settimeout
 8.this keyword
 9.call, bind, apply
