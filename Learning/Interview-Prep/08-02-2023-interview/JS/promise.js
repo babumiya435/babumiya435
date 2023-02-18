@@ -17,17 +17,21 @@ setTimeout(()=>{
 console.log("step1");
 let data = [1,2,3,4];
 let prom = new Promise((res,rej)=>{
-    function resFun(data){
-        // setTimeout(()=>{
+    // function resFun(data){
+        setTimeout((data)=>{
             res(data);
             // rej("ERROR");
-        // },5000)
+        },5000,data)
+        setTimeout(()=>{
+            res(data);
+            // rej("ERROR");
+        },5000,data)
         //.............
-        console.log('unchanged inside promise',data)
+    //     console.log('unchanged inside promise',data)
         data = ['a','b','c','d'];
-        console.log('changed inside promise',data)
-    }
-    resFun(data);
+    //     console.log('changed inside promise',data)
+    // }
+    // resFun(data);
 })
 console.log("test-test")
 prom.then((res)=>{

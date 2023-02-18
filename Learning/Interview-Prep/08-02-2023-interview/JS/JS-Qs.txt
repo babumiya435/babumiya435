@@ -324,7 +324,14 @@ button.addEventListener('click',callback);
   	.then(handleFulfilledA, handleRejectedA)
   	.then(handleFulfilledB, handleRejectedB)
   	.then(handleFulfilledC, handleRejectedC);
+	SetTimeOut(fn,5000):
+		https://www.freecodecamp.org/news/javascript-settimeout-how-to-set-a-timer-in-javascript-or-sleep-for-n-seconds/
+	setTimeout() method using named function as its argument
+	function greeting(){
+	  	console.log("Hello World");
+	}
+	setTimeout(greeting);
 8.this keyword
 9.call, bind, apply
-10. async,await
+10.async,await
 
