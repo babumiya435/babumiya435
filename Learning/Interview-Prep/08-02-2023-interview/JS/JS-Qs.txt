@@ -331,6 +331,22 @@ button.addEventListener('click',callback);
 	  	console.log("Hello World");
 	}
 	setTimeout(greeting);
+	-Example 1: Display a Text Once After 3 Second
+	-The setTimeout() method returns the interval id. For example
+		let intervalId = setTimeout(greet, 3000);
+		console.log('Id: ' + intervalId); 
+	-Example 2: Display Time Every 3 Second
+	(https://www.programiz.com/javascript/setInterval)
+8.Scope:(https://www.programiz.com/javascript/variable-scope)
+	In JavaScript, a variable can also be used without declaring it. If a variable is used without declaring it, that variable automatically becomes a global variable.
+	function greet() {
+    		a = "hello"
+	}
+	greet();
+	console.log(a); // hello
+	Note: In JavaScript, there is "strict mode"; in which a variable cannot be used without declaring it. To learn more about strict, visit JavaScript Strict.
+	
+	
 8.this keyword
 9.call, bind, apply
 10.async,await
