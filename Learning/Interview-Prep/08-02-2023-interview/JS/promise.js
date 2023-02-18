@@ -18,18 +18,22 @@ console.log("step1");
 let data = [1,2,3,4];
 let prom = new Promise((res,rej)=>{
     function resFun(data){
-        setTimeout(()=>{
+        // setTimeout(()=>{
             res(data);
-        },5000)
+            // rej("ERROR");
+        // },5000)
         //.............
+        console.log('unchanged inside promise',data)
         data = ['a','b','c','d'];
+        console.log('changed inside promise',data)
     }
     resFun(data);
 })
+console.log("test-test")
 prom.then((res)=>{
-    console.log(res);
+    console.log("promise response",res);
 }).catch((err)=>{
-    console.log(err);
+    console.log("promise error",err);
 })
 setTimeout(()=>{
     console.log("after then");
