@@ -43,7 +43,7 @@ console.log("after attacing call back",prom);
 // promise call call back will be given (.then/.catch) heighest priority amongst CB queues table.
 // Promise Queue >> Call Back Queue >> Web Api
 function fetch2(){
-    let user = fetch("https://dummyjson.com/products42144421");
+    let user = fetch("https://dummyjson.com/products/1");
     console.log(user)
     console.log("step1");
     console.log("step1");
