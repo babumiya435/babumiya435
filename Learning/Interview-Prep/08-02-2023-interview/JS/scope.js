@@ -13,3 +13,7 @@ greet();
 console.log(a); // we can access without declared variable
 b = 5; // in normal mode it is ok to not to declare variable with var ot any type and if we create inside function it behaves as global variable;
 console.log(b);
+
+let x = 0;
+const y = "const-variable";
+console.log(x,y);
