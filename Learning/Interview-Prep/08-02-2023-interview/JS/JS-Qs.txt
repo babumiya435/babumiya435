@@ -355,4 +355,9 @@ button.addEventListener('click',callback);
 	apply: used for calling a function with specific (object/this)context with array of [arguments].
 	bind: used to create a copy of a function with context binding to it and which can be called later in the code with series of arguments.
 10.async,await
+	async await are used to perform asynchronous code in synchrounous way.	
+	async function(){
+		let x = await promise1;
+		let y = await promise2;
+	}
 
