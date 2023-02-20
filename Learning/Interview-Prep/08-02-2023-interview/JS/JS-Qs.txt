@@ -351,5 +351,8 @@ button.addEventListener('click',callback);
 	this represents window object in browser
 	this epresents context of execution - function calling from some object context
 9.call, bind, apply
+	call: used for calling function with specific (object/this)context with series of parameters.
+	apply: used for calling a function with specific (object/this)context with array of [arguments].
+	bind: used to create a copy of a function with context binding to it and which can be called later in the code with series of arguments.
 10.async,await
 
