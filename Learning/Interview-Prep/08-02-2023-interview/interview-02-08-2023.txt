@@ -1,0 +1,89 @@
+HTML:
+
+1.Semantic tags in html.
+
+	https://www.w3schools.com/html/html5_semantic_elements.asp
+	Examples of non-semantic elements: <div> and <span> - Tells nothing about its content.
+	Examples of semantic elements: <form>, <table>, and <article> - Clearly defines its content.
+	<article>,<aside>,<details>,<figcaption>,<figure>,<footer>,<header>,<main>,<mark>,<nav>,<section>,<summary>,<time>
+	<figure>
+	  <img src="pic_trulli.jpg" alt="Trulli">
+  	  <figcaption>Fig1. - Trulli, Puglia, Italy.</figcaption>
+	</figure>
+
+	https://www.simplilearn.com/tutorials/html-tutorial/html-semantics
+	The HTML semantics refers to the tags that provide meaning to an HTML page rather than just presentation. It makes HTML more comprehensible by better defining the different sections and layout of web pages
+	These elements clearly define its content. 
+
+	Why Do You Need to Use Semantic Tags in HTML?
+	-The semantic HTML tags help the search engines and other user devices to determine the importance and context of web pages.
+	-The pages made with semantic elements are much easier to read.
+	-It has greater accessibility. It offers a better user experience.
+
+	https://developer.mozilla.org/en-US/docs/Glossary/Semantics
+		-Search engines will consider its contents as important keywords to influence the page's search rankings (see SEO)
+		-Screen readers can use it as a signpost to help visually impaired users navigate a page
+		-Finding blocks of meaningful code is significantly easier than searching through endless divs with or without semantic or namespaced classes
+		-Suggests to the developer the type of data that will be populated
+		-Semantic naming mirrors proper custom element/component naming
+
+	https://www.semrush.com/blog/semantic-html5-guide/
+		-Accessibility(NVDA,JAWS)
+		-SEO(Googlebot)
+	HTML Semantic Tags for Structure
+		-Many semantic HTML tags communicate the layout of a page
+	HTML Semantic Tags for Text
+		-The semantic HTML tags for text are HTML tags that—besides the formatting—also convey the semantic function of the text they contain.
+		-<h1> (heading): The H1 tag marks the top level heading. There’s usually only one H1 heading per page.
+		-<h2> to <h6> (subheadings): The subheadings of various levels of importance. There can be multiple headings of the same level on a single page. 
+		-<p> (paragraph): A standalone paragraph of text.
+		-<a> (anchor): Used to mark up a hyperlink from one page to another.
+		-<ol> (ordered list): A list of items that are displayed in a particular order, starting with bullet points. One <li> (list item) tag contains a single item in the list.
+		-<ul> (unordered list): A list of items that do not need to be displayed in a particular order, starting with ordinal numbers. One <li> (list item) tag contains a single item of the list. 
+		-<q> / <blockquote>: A quotation of the text. Use <blockquote> for long, multi-line quotations and <q> for shorter, inline quotations.
+		-<em> (emphasis): Used for text that should be emphasized.
+		-<strong> (strong emphasis): Used for text that should be strongly emphasized.
+		-<code>: A block of computer code
+
+	<div id="nav"> 
+	<div class="header">
+	<div id="footer">
+
+	<nav>
+	<header>
+	<footer>
+
+
+2.meta tags
+
+CSS:
+
+1.Pseudo calsses / elements
+
+JS:
+
+1.Arrow fn vs Normal fn
+2.Map , filter, reduce methods
+3.Call back and call back hell
+4.Hoisting with example
+5.Virtual dom vs real dom
+6.Event loop , call stack, stack queue
+7.promise, settimeout
+8.this keyword
+9.call, bind, apply
+
+React:
+
+1.Hooks
+2.Pure component
+3.Controlled vs uncontrolled component
+4.what is heigher order component
+5.problem drilling
+6.passing data from child to parent vise versa
+7.Redux
+8.Life cycle hooks
+
+Angular:
+
+1.passing data from child to parent vise versa
+2.Life cycle hooks
