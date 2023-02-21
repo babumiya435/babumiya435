@@ -52,6 +52,12 @@ Intermediate Level TypeScript Interview Questions
 
 Advanced Level TypeScript Interview Questions
 
+45. How to compile Typescript with Visual Studio Code?
+46.  What are the Recent Advancements in TypeScript?
+47. Explain the Awaited Type and Promise Improvements
+48. Explain how TypeScript files can be supported from Node Modules
+49. What is Type Assertion? Explain its types
+50. What is Recursive Type Aliases?
 
 
 
