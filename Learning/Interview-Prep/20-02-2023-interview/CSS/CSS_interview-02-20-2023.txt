@@ -1,0 +1,117 @@
+CSS : (https://www.simplilearn.com/tutorials/css-tutorial/css-interview-questions)
+Basic CSS Interview Questions:
+
+1. Name some CSS frameworks.
+2. What do you understand by the universal sector?
+3. Tell us about the use of the ruleset.
+4. What are the elements of the CSS Box Model?
+5. Differentiate between CSS3 and CSS2.
+6. How can CSS be integrated into an HTML page?
+7. Explain a few advantages of CSS.
+8. What is meant by RGB stream?
+9. What was the purpose of developing CSS?
+10. What is the difference between a class and an ID?
+
+Intermediate CSS Interview Questions:
+
+1. Define z-index.
+2. What are the benefits of CSS Sprites?
+3. How can you target h3 and h2 with the same styling?
+4. Name media types allowed by CSS.
+5. How can you use CSS to control image repetition?
+6. Tell us about the property used for image scroll controlling?
+8. Define contextual selectors.
+9. Explain responsive web design. 
+10. Tell us about the general CSS nomenclature.
+11. What are the limitations of CSS?
+12. How to include CSS in the webpage?
+13. What are the different types of Selectors in CSS?
+14. What is a CSS Preprocessor? What are Sass, Less, and Stylus? Why do people use them?
+15. What is VH/VW (viewport height/ viewport width) in CSS?
+16. Difference between reset vs normalize CSS? How do they differ?
+17. What is the difference between inline, inline-block, and block?
+18. Is it important to test the webpage in different browsers?
+19. What are Pseudo classes?
+20. How do you specify units in the CSS? What are the different ways to do it?
+21. Does margin-top or margin-bottom have an effect on inline elements?
+22. What property is used for changing the font face?
+23. What are the differences between adaptive design and responsive design?
+24. How are the CSS selectors matched against the elements by the browser?
+25. How is the border-box different from the content box?
+26. How is opacity specified in CSS3?
+27. What is cascading in CSS?
+28. When does DOM reflow occur?
+29. Different Box Sizing Property?
+30. How to center align a div inside another div?
+31. What is the grid system?
+32. What are the different ways to hide the element using CSS?
+33. What does the: root pseudo-class refer to?
+34. What does Accessibility (a11y) mean?
+35. How do I restore the default value of a property?
+36. Difference between CSS grid vs flexbox?0
+37. How does Calc work?
+38. What do CSS Custom properties variables mean?
+39. What is the difference between CSS variables and pre-processor (SASS, LESS, Stylus) variables?
+40. What does * { box-sizing: border-box; } do? What are its advantages?
+41. What does !important mean in CSS?
+42. What is progressive rendering? How do you implement progressive rendering on the website? What are its advantages?
+43. Does style1.css have to be downloaded and parsed before style2.css can be fetched?
+44. How to determine if the browser supports a certain feature?
+45. How does absolute positioning work?
+46. Does this property work overflow: hidden?
+
+Advanced CSS Interview Questions
+
+1. When should you use translate () instead of absolute positioning?
+2. Name different ways to position some aspects in CSS.
+3. What are mixins?
+4. How can you optimize the webpage for prints?
+5. What is meant by CSS working under the hood?
+6. Differentiate between the use of ID selector and class selector.
+7. Tell us about CSS float property.
+8. What do you understand by pseudo-elements?
+9. Differentiate between logical and physical tags
+10. How media types in CSS work?
+
+Frequently Asked CSS Interview Questions
+
+1. Tell us something about CSS3.
+2. How is a CSS selector used?
+3. What are CSS image scripts?
+4. Explain CSS specificity
+5. Define gradients in CSS
+6. What are the properties of flexbox?
+7. Tell us about the use of the CSS Box Model.
+8. What are the position states in CSS?
+9. Differentiate between absolute and relative in CSS. 
+10. What is common between class and ID?
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
