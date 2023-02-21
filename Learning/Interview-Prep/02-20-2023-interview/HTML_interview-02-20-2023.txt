@@ -1,0 +1,49 @@
+html (https://www.javatpoint.com/html-interview-questions)
+1) What is HTML?
+2) What are Tags?
+3) Do all HTML tags have an end tag?
+4) What is formatting in HTML?
+5) How many types of heading does an HTML contain?
+6) How to create a hyperlink in HTML?
+7) Which HTML tag is used to display the data in the tabular form?
+8) What are some common lists that are used when designing a page?
+9) What is the difference between HTML elements and tags?
+10) What is semantic HTML?
+11) What is an image map?
+12) How to insert a copyright symbol on a browser page?
+13) How to create a nested webpage in HTML?
+14) How do you keep list elements straight in an HTML file?
+15) Does a hyperlink only apply to text?
+16) What is a style sheet?
+17) Can you create a multi-colored text on a web page?
+18) Is it possible to change the color of the bullet?
+19) Explain the layout of HTML?
+20) What is a marquee?
+21) How many tags can be used to separate a section of texts?
+22) How to make a picture of a background image of a web page?
+23) What are empty elements?
+24) What is the use of a span tag? Give one example.
+25) What is the use of an iframe tag?
+26) What are the entities in HTML?
+27) Why is a URL encoded in HTML?
+28) Does a <!DOCTYPE html> tag is a HTML tag?
+--------------HTML5--------------------
+29) What is the canvas element in HTML5?
+30) What is SVG?
+31) What are the different new form element types in HTML 5?
+32) Is there any need to change the web browsers to support HTML5?
+33) Which type of video formats are supported by HTML5?
+34) Is audio tag supported in HTML 5?
+35) What is the difference between progress and meter tag?
+36) What is the use of figure tag in HTML 5?
+37) What is the use of figcaption tag in HTML 5?
+38) What is button tag?
+39) What is the use of details and summary tag?
+40) What is datalist tag?
+41) How are tags migrated from HTML4 to HTML5?
+42) If I do not put <!DOCTYPE html> will HTML 5 work?
+43) What is the use of the required attribute in HTML5?
+44) What are the new <input> types for form validation in HTML5?
+
+
+
