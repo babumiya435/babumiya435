@@ -1,0 +1,27 @@
+Angular (https://www.fullstack.cafe/blog/angular-8-interview-questions):
+
+Q1:  Explain the difference between Promise and Observable in Angular?
+Q2: Explain Lazy Loading in Angular?
+Q3: What are Custom elements?
+Q4: What are the utility functions provided by RxJS?
+Q5: What is AOT?
+Q6: What is Angular Ivy?
+Q7: What is Bazel?
+Q8: What is Subscribing?
+Q9: What is the purpose of Wildcard route?
+Q10: What is the use of Codelyzer?
+Q11: Why should ngOnInit be used, if we already have a constructor?
+Q12: Are there any pros/cons (especially performance-wise) in using local storage to replace cookie functionality?
+Q13: Explain the purpose of Service Workers in Angular
+Q14: How to detect a route change in Angular?
+Q15: What does a just-in-time (JIT) compiler do (in general)?
+Q16: What is Incremental DOM? How is it different from Virtual DOM?
+Q17: What is Zone in Angular?
+Q18: What is ngUpgrage?
+Q19: Why we should use Bazel for Angular builds?
+Q20: Angular 8: What are some changes in Location module?
+Q21: How does Ivy affect the (Re)build time?
+Q22: Just-in-Time (JIT) vs Ahead-of-Time (AOT) compilation. Explain the difference.
+Q23: What is the Angular equivalent to an AngularJS $watch?
+Q24: Why Incremental DOM is Tree Shakable?
+Q25: Why did the Google team go with incremental DOM instead of virtual DOM?
