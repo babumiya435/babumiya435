@@ -1,2 +1,66 @@
 TS : (https://www.simplilearn.com/tutorials/typescript-tutorial/typescript-interview-questions):
 
+Beginner Level TypeScript Interview Questions:
+
+1. What is TypeScript?
+2. Explain Arrays in TypeScript
+3. List the Applications of TypeScript
+4. List the Advantages of TypeScript
+5. List the disadvantages of TypeScript
+6. Explain the features of Arrays in TypeScript
+7. How to declare a variable in TypeScript?
+8. Name the access modifiers supported in TypeScript.
+9. Explain Loops in Typescript
+10. What is the use of the tsconfig.json file?
+11. How to convert a string to a number in TypeScript?
+12. What is meant by contextual typing?
+13. What is JSX?
+14. Define static typing
+15. What are import and export keywords in TypeScript?
+16. Can TypeScript be used for the backend?
+17. How will you check if a variable is null or undefined in TypeScript?
+18. What are getters/setters?
+19. How can a class constant be implemented in TypeScript?
+20. What is the Declare Keyword in TypeScript?
+21. What is an Interface with reference to TypeScript?
+22. Describe ‘as’ syntax in TypeScript.
+23. Define Lambda function.
+24. How to create objects in Typescript?
+25. Explain Different Data Types in Typescript?
+26. What is meant by Type Inference?27. Explain Tuples in Typescript With Example
+27. Explain Tuples in Typescript With Example
+
+Intermediate Level TypeScript Interview Questions
+
+28. What is Anonymous Function in TypeScript?
+29. How to Install Typescript?
+30. What are Decorators?
+31. What are Mixins?
+32. Explain Classes in TypeScript.
+33. What is Namespace and how to declare it?
+34. What are Rest Parameters in Typescript?
+35. What are Objects in TypeScript?
+36. Explain Type Aliases
+37. Explain Modules in TypeScript
+38. What are Mapped Types ?
+39. What are Conditional Types in TypeScript ?
+40. What are Distributive Conditional Types?
+41. Explain how TypeScript files can be supported from Node Modules
+42. Explain the Components of Typescript
+43. What are Object-Oriented Principles supported by TypeScript?
+44. Explain the Drawbacks of using Declaration Files with Typescript
+
+Advanced Level TypeScript Interview Questions
+
+
+
+
+
+
+
+
+
+
+
+
+
