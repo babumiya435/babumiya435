@@ -1,0 +1,142 @@
+1. What is JavaScript?
+2. Enumerate the differences between Java and JavaScript?
+3. What are JavaScript Data Types?
+4. What is the use of isNaN function?
+5. Which is faster between JavaScript and an ASP script?
+6. What is negative Infinity?
+7. Is it possible to break JavaScript Code into several lines?
+8. Which company developed JavaScript?
+9. What are undeclared and undefined variables?
+10. Write the code for adding new elements dynamically?
+11. What are global variables? How are these variable declared?
+12. What is a prompt box?
+13. What is ‘this’ keyword in JavaScript?
+14. What is the working of timers in JavaScript?
+15. Which symbol is used for comments in Javascript?
+16. What is the difference between ViewState and SessionState?
+17. What is === operator?
+18. How you can submit a form using JavaScript?
+19. Does JavaScript support automatic type conversion?
+20. How can the style/class of an element be changed?
+21. How to read and write a file using JavaScript?
+22. What are all the looping structures in JavaScript?
+23. What is called Variable typing in Javascript?
+24. How can you convert the string of any base to an integer in JavaScript?
+25. Difference between “==” and “===”?
+26. What would be the result of 3+2+”7″?
+27. How to detect the operating system on the client machine?
+28. What do you mean by NULL in Javascript?
+29. What is the function of the delete operator?
+30. What is an undefined value in JavaScript?
+31. What are all the types of Pop up boxes available in JavaScript?
+32. What is the use of Void (0)?
+33. How can a page be forced to load another page in JavaScript?
+34. What is the data type of variables in JavaScript?
+35. What is the difference between an alert box and a confirmation box?
+36. What are escape characters?
+37. What are JavaScript Cookies?
+38. What a pop()method in JavaScript is?
+39. Does JavaScript has concept level scope?
+40. What are the disadvantages of using innerHTML in JavaScript?
+41. What is break and continue statements?
+42. What are the two basic groups of data types in JavaScript?
+43. How can generic objects be created?
+44. What is the use of a type of operator?
+45. Which keywords are used to handle exceptions?
+46. Which keyword is used to print the text on the screen?
+47. What is the use of the blur function?
+48. What is variable typing?
+49. How to find an operating system in the client machine using JavaScript
+50. What are the different types of errors in JavaScript?
+51. What is the use of the Push method in JavaScript?
+52. What is the unshift method in JavaScript?
+53. What is the difference between JavaScript and Jscript?
+54. How are object properties assigned?
+55. What is the ‘Strict Mode in JavaScript, and how can it be enabled?
+56. What is the way to get the status of a CheckBox?
+57. How can the OS of the client machine be detected?
+58. What is a window.onload and onDocumentReady?
+59. How closures work in JavaScript?
+60. How can a value be appended to an array?
+61. What is for-in loop in Javascript?
+62. What are the important properties of an anonymous function in JavaScript?
+63. What is the difference between .call() and .apply()?
+64. What is event bubbling?
+65. Is JavaScript case sensitive? Give its example.
+66. What boolean operators can be used in JavaScript?
+67. How can a particular frame be targeted, from a hyperlink, in JavaScript?
+68. What is the role of break and continue statements?
+69. Write the point of difference between a web garden and a web farm?
+70. How are object properties assigned?
+71. What is the method for reading and writing a file in JavaScript?
+72. How are DOM utilized in JavaScript?
+73. How are event handlers utilized in JavaScript?
+74. What is the role of deferred scripts in JavaScript?
+75. What are the various functional components in JavaScript?
+76. Write about the errors shown in JavaScript?
+77. What are Screen objects?
+78. What is the unshift() method?
+79. What is unescape() and escape() functions?
+80. What are the decodeURI() and encodeURI()?
+81. Why you should not use innerHTML in JavaScript?
+82. What does the following statement declare?
+83. How are JavaScript and ECMA Script related?
+84. What is namespacing in JavaScript, and how is it used?
+85. How can JavaScript codes be hidden from old browsers that do not support JavaScript?
+86. How to use Loop in JavaScript?
+87. How to use Loops in Javascript?
+88. What are the important JavaScript Array Method explain with example?
+89. What is OOPS Concept in JavaScript?
+90. What is Loop Though the Properties of an Object?
+91. What is JavaScript Unit Testing, and what are the challenges in JavaScript Unit Testing?
+92. What are some important JavaScript Unit Testing Frameworks?
+93. What is QuickSort Algorithm in JavaScript?
+94.How does QuickSort Work
+95. What is DOM in JavaScript?
+96. How to use DOM and Events?
+97. What is External JavaScript?
+98. When to Use Internal and External JavaScript Code?
+99. What are Cookies in JavaScript?
+100. Give an example of JavaScript Multiplication Table
+101. Explain Popup Message using event with example
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
