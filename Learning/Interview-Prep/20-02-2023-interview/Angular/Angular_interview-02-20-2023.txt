@@ -13,6 +13,7 @@ Angular Interview Questions For Beginners:
 8. What are the new updates with Angular10?
 9. What are Templates in Angular?
 10. What are Annotations in Angular?
+-----------------------------------------------------------------------
 11. What are Directives in Angular?
 12. What is an AOT compilation? What are its advantages?
 13. What are Components in Angular?
@@ -23,6 +24,7 @@ Angular Interview Questions For Beginners:
 18. What is an ngModule?
 19. What are filters in Angular? Name a few of them
 20. What is view encapsulation in Angular?
+-----------------------------------------------------------------------
 21. What are controllers?
 22. What do you understand by scope in Angular?
 23. Explain the lifecycle hooks in Angular
@@ -41,6 +43,7 @@ Angular Interview Questions For Advanced Level
 33. What is Bootstrap? How is it embedded into Angular?
 34. What is Eager and Lazy loading?
 35. What type of DOM does Angular implement?
+-----------------------------------------------------------------------
 36. Why were client-side frameworks like Angular introduced?
 37. How does an Angular application work?
 38. Explain components, modules and services in Angular.

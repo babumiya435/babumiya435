@@ -10,6 +10,7 @@ Q7: What is Bazel?
 Q8: What is Subscribing?
 Q9: What is the purpose of Wildcard route?
 Q10: What is the use of Codelyzer?
+-----------------------------------------------------------------------
 Q11: Why should ngOnInit be used, if we already have a constructor?
 Q12: Are there any pros/cons (especially performance-wise) in using local storage to replace cookie functionality?
 Q13: Explain the purpose of Service Workers in Angular
@@ -20,6 +21,7 @@ Q17: What is Zone in Angular?
 Q18: What is ngUpgrage?
 Q19: Why we should use Bazel for Angular builds?
 Q20: Angular 8: What are some changes in Location module?
+-----------------------------------------------------------------------
 Q21: How does Ivy affect the (Re)build time?
 Q22: Just-in-Time (JIT) vs Ahead-of-Time (AOT) compilation. Explain the difference.
 Q23: What is the Angular equivalent to an AngularJS $watch?

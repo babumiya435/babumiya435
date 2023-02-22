@@ -9,6 +9,7 @@ html (https://www.javatpoint.com/html-interview-questions)
 8) What are some common lists that are used when designing a page?
 9) What is the difference between HTML elements and tags?
 10) What is semantic HTML?
+-----------------------------------------------------------------------
 11) What is an image map?
 12) How to insert a copyright symbol on a browser page?
 13) How to create a nested webpage in HTML?
@@ -19,6 +20,7 @@ html (https://www.javatpoint.com/html-interview-questions)
 18) Is it possible to change the color of the bullet?
 19) Explain the layout of HTML?
 20) What is a marquee?
+-----------------------------------------------------------------------
 21) How many tags can be used to separate a section of texts?
 22) How to make a picture of a background image of a web page?
 23) What are empty elements?
@@ -40,6 +42,7 @@ html (https://www.javatpoint.com/html-interview-questions)
 38) What is button tag?
 39) What is the use of details and summary tag?
 40) What is datalist tag?
+-----------------------------------------------------------------------
 41) How are tags migrated from HTML4 to HTML5?
 42) If I do not put <!DOCTYPE html> will HTML 5 work?
 43) What is the use of the required attribute in HTML5?
