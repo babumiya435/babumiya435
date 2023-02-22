@@ -23,6 +23,7 @@ Intermediate CSS Interview Questions:
 8. Define contextual selectors.
 9. Explain responsive web design. 
 10. Tell us about the general CSS nomenclature.
+-----------------------------------------------------------------------
 11. What are the limitations of CSS?
 12. How to include CSS in the webpage?
 13. What are the different types of Selectors in CSS?
@@ -33,6 +34,7 @@ Intermediate CSS Interview Questions:
 18. Is it important to test the webpage in different browsers?
 19. What are Pseudo classes?
 20. How do you specify units in the CSS? What are the different ways to do it?
+-----------------------------------------------------------------------
 21. Does margin-top or margin-bottom have an effect on inline elements?
 22. What property is used for changing the font face?
 23. What are the differences between adaptive design and responsive design?
@@ -43,6 +45,7 @@ Intermediate CSS Interview Questions:
 28. When does DOM reflow occur?
 29. Different Box Sizing Property?
 30. How to center align a div inside another div?
+-----------------------------------------------------------------------
 31. What is the grid system?
 32. What are the different ways to hide the element using CSS?
 33. What does the: root pseudo-class refer to?
@@ -53,6 +56,7 @@ Intermediate CSS Interview Questions:
 38. What do CSS Custom properties variables mean?
 39. What is the difference between CSS variables and pre-processor (SASS, LESS, Stylus) variables?
 40. What does * { box-sizing: border-box; } do? What are its advantages?
+-----------------------------------------------------------------------
 41. What does !important mean in CSS?
 42. What is progressive rendering? How do you implement progressive rendering on the website? What are its advantages?
 43. Does style1.css have to be downloaded and parsed before style2.css can be fetched?

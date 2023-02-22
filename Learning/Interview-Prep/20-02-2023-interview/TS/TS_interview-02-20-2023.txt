@@ -12,6 +12,7 @@ Beginner Level TypeScript Interview Questions:
 8. Name the access modifiers supported in TypeScript.
 9. Explain Loops in Typescript
 10. What is the use of the tsconfig.json file?
+-----------------------------------------------------------------------
 11. How to convert a string to a number in TypeScript?
 12. What is meant by contextual typing?
 13. What is JSX?
@@ -22,6 +23,7 @@ Beginner Level TypeScript Interview Questions:
 18. What are getters/setters?
 19. How can a class constant be implemented in TypeScript?
 20. What is the Declare Keyword in TypeScript?
+-----------------------------------------------------------------------
 21. What is an Interface with reference to TypeScript?
 22. Describe ‘as’ syntax in TypeScript.
 23. Define Lambda function.
@@ -29,6 +31,7 @@ Beginner Level TypeScript Interview Questions:
 25. Explain Different Data Types in Typescript?
 26. What is meant by Type Inference?27. Explain Tuples in Typescript With Example
 27. Explain Tuples in Typescript With Example
+-----------------------------------------------------------------------
 
 Intermediate Level TypeScript Interview Questions
 
@@ -42,6 +45,7 @@ Intermediate Level TypeScript Interview Questions
 35. What are Objects in TypeScript?
 36. Explain Type Aliases
 37. Explain Modules in TypeScript
+-----------------------------------------------------------------------
 38. What are Mapped Types ?
 39. What are Conditional Types in TypeScript ?
 40. What are Distributive Conditional Types?
@@ -49,6 +53,7 @@ Intermediate Level TypeScript Interview Questions
 42. Explain the Components of Typescript
 43. What are Object-Oriented Principles supported by TypeScript?
 44. Explain the Drawbacks of using Declaration Files with Typescript
+-----------------------------------------------------------------------
 
 Advanced Level TypeScript Interview Questions
 
@@ -58,6 +63,7 @@ Advanced Level TypeScript Interview Questions
 48. Explain how TypeScript files can be supported from Node Modules
 49. What is Type Assertion? Explain its types
 50. What is Recursive Type Aliases?
+-----------------------------------------------------------------------
 
 
 
