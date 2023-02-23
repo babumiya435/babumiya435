@@ -1,0 +1,3 @@
+https://www.scaler.com/topics/data-structures/time-complexity-in-data-structure/
+
+https://www.scaler.com/topics/asymptotic-notations/#big-o-notation--represented-as-o-
