@@ -1,0 +1,26 @@
+StringBuilder
+It also provides us mutable strings but here we lack thread safety. It cannot be used by multiple threads simultaneously. Since the class is not applying this extra feature like StringBuffer here it becomes faster than it.
+
+Syntax
+
+StringBuilder a= new StringBuilder("Scaler");
+
+Code
+
+StringBuilder temp=new StringBuilder();
+//Initial size of object
+System.out.println(temp.capacity());
+StringBuilder a= new StringBuilder("String");
+System.out.println(a);
+//updating the string
+a.append(" Articles");
+System.out.println(a);
+a=new StringBuilder("InterviewBit");
+System.out.println(a);
+
+Output
+
+16
+String
+String Articles
+InterviewBit
