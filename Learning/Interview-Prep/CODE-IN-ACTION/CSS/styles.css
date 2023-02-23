@@ -1,0 +1,57 @@
+/* CSS IN ACTION */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: sans-serif;
+    padding: 1em;
+}
+.container {
+    display: flex;
+    gap: 1em;
+}
+.container .items {
+    position: relative;
+    background: white;
+    padding: 1em 2em;
+    border: 2px solid rgba(0,0,0, .3);
+    border-radius: 1em;
+    width: 200px;
+    height: 300px;
+    box-shadow: -1em 0 20px rgba(0,0,0, .5);
+    margin-right: -100px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 1em;
+    transition: .3s;
+}
+.container .items button{
+    background: blue;
+    color: white;
+    padding: .5em 1em;
+    outline: none;
+    border: none;
+    border-radius: .5em;
+    margin-top: auto;
+    transition: transform .2s;
+}
+.container .items button:active{
+    transform: scale(.9);
+}
+.container .items:hover {
+    background: blue;
+    color: white;
+}
+.container .items:hover button {
+    background: white;
+    color: black;
+}
+.container .items:hover ~ .items {
+    transform: translateX(80px) rotate(12deg)
+    scale(.9);
+    opacity: .8;
+
+}
