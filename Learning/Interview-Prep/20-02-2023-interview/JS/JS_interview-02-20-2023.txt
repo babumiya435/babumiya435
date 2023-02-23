@@ -3,6 +3,8 @@
 	
 2. Enumerate the differences between Java and JavaScript?
 	https://www.coursera.org/articles/java-vs-javascript
+	JAVA : is compiled (compiled once(byte code) and can be used any where) language.(execute byte code at once)
+	JAVASCRIPT : is interpreted (compiled at run time and line by line)(execute line by line byte code);
 3. What are JavaScript Data Types?
 4. What is the use of isNaN function?
 5. Which is faster between JavaScript and an ASP script?
