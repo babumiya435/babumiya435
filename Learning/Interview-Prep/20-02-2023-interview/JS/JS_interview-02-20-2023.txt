@@ -6,8 +6,14 @@
 	JAVA : is compiled (compiled once(byte code) and can be used any where) language.(execute byte code at once)
 	JAVASCRIPT : is interpreted (compiled at run time and line by line)(execute line by line byte code);
 3. What are JavaScript Data Types?
+	(https://cs.lmu.edu/~ray/notes/javascripttypes/#:~:text=JavaScript%20has%208%20types%3A%20undefined,string%2C%20symbol%2C%20and%20object.)
+	number,string,boolean,object,null,undefined,Symbol,BigInt
 4. What is the use of isNaN function?
+	(https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/isNaN)
+	return true if given parameter is not a number (isNaN("5") tries to coerced first and compares with NaN type);
+	For number values, isNaN() tests if the number is the value NaN. When the argument to the isNaN() function is not of type Number, the value is first coerced to a number, and the resulting value is then compared against NaN.
 5. Which is faster between JavaScript and an ASP script?
+	(https://www.tutorialspoint.com/which-one-is-faster-between-javascript-and-an-asp-script#:~:text=In%20between%20JavaScript%20and%20ASP,and%20performing%20operations%20on%20it.)
 6. What is negative Infinity?
 7. Is it possible to break JavaScript Code into several lines?
 8. Which company developed JavaScript?
