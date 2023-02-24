@@ -16,7 +16,7 @@
 	(https://www.tutorialspoint.com/which-one-is-faster-between-javascript-and-an-asp-script#:~:text=In%20between%20JavaScript%20and%20ASP,and%20performing%20operations%20on%20it.)
 	JS is faster than ASP as it is executed at client side in browser.
 6. What is negative Infinity?
-	(https://www.oreilly.com/library/view/javascript-the-definitive/0596101996/re132.html#:~:text=NEGATIVE_INFINITY%20is%20a%20special%20numeric,the%20NEGATIVE_INFINITY%20value%20as%20%2DInfinity%20.)
+	(https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/NEGATIVE_INFINITY)
 7. Is it possible to break JavaScript Code into several lines?
 8. Which company developed JavaScript?
 9. What are undeclared and undefined variables?
