@@ -20,6 +20,11 @@
 7. Is it possible to break JavaScript Code into several lines?
 	yes it is possible to break code without ;
 8. Which company developed JavaScript?
+	JavaScript was invented by Brendan Eich in 1995.
+	It was developed for Netscape 2, and became the ECMA-262 standard in 1997.
+	After Netscape handed JavaScript over to ECMA, the Mozilla foundation continued to develop JavaScript for the Firefox browser. Mozilla's latest version was 1.8.5. (Identical to ES5).
+	Internet Explorer (IE4) was the first browser to support ECMA-262 Edition 1 (ES1).
+	2018	ES6	Full support for ES6 in all browsers **
 9. What are undeclared and undefined variables?
 10. Write the code for adding new elements dynamically?
 -----------------------------------------------------------------------
