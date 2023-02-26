@@ -18,6 +18,7 @@
 6. What is negative Infinity?
 	(https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/NEGATIVE_INFINITY)
 7. Is it possible to break JavaScript Code into several lines?
+	yes it is possible to break code without ;
 8. Which company developed JavaScript?
 9. What are undeclared and undefined variables?
 10. Write the code for adding new elements dynamically?

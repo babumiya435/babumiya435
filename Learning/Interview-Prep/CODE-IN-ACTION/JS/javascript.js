@@ -51,3 +51,8 @@ console.log("End of stack or synchronous code");
 //     console.log(err);
 // })
 console.log("Globla object");
+const ar = [];
+ar.push(1);
+console.log(ar);
+let filter = [1,2,3].filter(e => e-1)
+console.log(filter);
