@@ -29,6 +29,11 @@
 	undeclared variables throws an referece error i.e it doesnt or no memory allocated to store that
 	undefined mean memory is allocated to that variable but there is no value assigned to it.
 10. Write the code for adding new elements dynamically?
+	(https://www.geeksforgeeks.org/javascript-code-for-adding-new-elements-in-a-dynamic-way/)
+	let newDiv = creatElement("div");
+	newDiv.setAttributes("class","container");
+	newDiv.innerText = "New Div Created dynamically";
+	
 -----------------------------------------------------------------------
 11. What are global variables? How are these variable declared?
 12. What is a prompt box?
