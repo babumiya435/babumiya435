@@ -36,6 +36,9 @@
 	
 -----------------------------------------------------------------------
 11. What are global variables? How are these variable declared?
+	(https://www.geeksforgeeks.org/how-to-declare-global-variables-in-javascript/)
+	Global variables declared at the time of initial hoisting and has global scope and can be accessed from any place/scope untill its scope is unchanged/ similar varibale name used.
+
 12. What is a prompt box?
 13. What is ‘this’ keyword in JavaScript?
 14. What is the working of timers in JavaScript?
