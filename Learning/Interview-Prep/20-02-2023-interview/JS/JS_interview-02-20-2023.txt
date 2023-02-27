@@ -26,6 +26,8 @@
 	Internet Explorer (IE4) was the first browser to support ECMA-262 Edition 1 (ES1).
 	2018	ES6	Full support for ES6 in all browsers **
 9. What are undeclared and undefined variables?
+	undeclared variables throws an referece error i.e it doesnt or no memory allocated to store that
+	undefined mean memory is allocated to that variable but there is no value assigned to it.
 10. Write the code for adding new elements dynamically?
 -----------------------------------------------------------------------
 11. What are global variables? How are these variable declared?
