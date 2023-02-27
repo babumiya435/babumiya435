@@ -1,0 +1,20 @@
+1.Most Challenging task:
+	1.Opportunity to create MNP - complete front end flow with all the validations in limited time.
+	(created new component,created new service,created new reactive form,created subject,changedetectionONpush)
+
+2.Most Difficult ticket:
+	1.Manufature-warrenty replacement:
+	 -redirection back from review to the last popover on the warrenty page with the history of data.
+	2. UAT-issue -language switching once remove one of the cart item.
+		-from front end we will be sending the current language but befor this call we are showing
+	3. Search History savings for multiple tabs and searches sessionstorage.
+	4. turbo suspend reasons(lot of validations and conditions and redirection and ned to show the drop down value)
+	5. family sharing plan where we have input fields(onblur) and radio(onclick) buttons available and need (event handler to handle these cases);
+	
+		
+
+3.Most Difficult CR:
+
+4.Most Difficult situation faced:
+	1. before the release we have aroud 15 defects to deliver on saturdaya and we were on the pressure and did the successfull release
+	on that day i understand that defects in prepod are the similar defects but will be critical because of timeline(no need take pressure need to think and find the root cause).
