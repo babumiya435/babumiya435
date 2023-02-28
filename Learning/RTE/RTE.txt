@@ -14,7 +14,8 @@
 		
 
 3.Most Difficult CR:
+	MNP - flow from scratch.
 
 4.Most Difficult situation faced:
-	1. before the release we have aroud 15 defects to deliver on saturdaya and we were on the pressure and did the successfull release
+	1. before the release we have aroud 15 defects to deliver on saturday and we were on the pressure and did the successfull release
 	on that day i understand that defects in prepod are the similar defects but will be critical because of timeline(no need take pressure need to think and find the root cause).
