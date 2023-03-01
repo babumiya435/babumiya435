@@ -137,3 +137,7 @@ Inheritance, Polymorphism and Code Reuse
 Design Patterns
 Partial Applications, Currying, Compose and Pipe
 Clean Code
+--------------------------------------------------------------
+(https://hackernoon.com/12-javascript-concepts-that-will-level-up-your-development-skills-b37d16ad7104)
+--------------------------------------------------------------
+(https://www.webfx.com/blog/web-design/6-advanced-javascript-techniques-you-should-know/)
