@@ -1,0 +1,4 @@
+(https://www.adaface.com/blog/typescript-interview-questions/)
+---------------------------------------------------------------------
+(https://www.interviewbit.com/typescript-interview-questions/)
+(https://www.simplilearn.com/tutorials/typescript-tutorial/typescript-interview-questions)
