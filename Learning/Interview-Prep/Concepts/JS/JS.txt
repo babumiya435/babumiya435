@@ -101,7 +101,7 @@ All 100+ Topics:
 98. Express 
 99. Cross Platform 
 100. TypeScript 
-101. ESLint07 
+101. ESLint 
 
 -----------------------------------------------------------------------
 (https://github.com/leonardomso/33-js-concepts)
