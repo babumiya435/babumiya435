@@ -1,7 +1,7 @@
 (https://www.w3schools.com/js/default.asp)
 All 100+ Topics:
 (https://www.youtube.com/watch?v=lkIFF4maKMU)
-1. Web Browser 
+1. Web Browser ---> document,settimeout,ajax,
 2. Html 
 3. High Level 
 4. ECMA 
@@ -101,7 +101,7 @@ All 100+ Topics:
 98. Express 
 99. Cross Platform 
 100. TypeScript 
-101. ESLint07 
+101. ESLint 
 
 -----------------------------------------------------------------------
 (https://github.com/leonardomso/33-js-concepts)
