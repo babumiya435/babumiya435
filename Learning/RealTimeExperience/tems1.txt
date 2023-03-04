@@ -1,0 +1,80 @@
+const http = require('http')
+const open = require('open');
+const fs = require('fs');
+const path = require('path');
+const inquirer = require('inquirer');
+const enLocale = "en_US";
+const jaLocale = "ja_JP";
+const dataFolderName = "data"
+const css = ".css"
+const json = ".json"
+const html = ".html"
+const contentFileName = "content.html"
+
+const enTerms = getAllTerms(dataFolderName, {}, null, enLocale);
+
+inquirer
+    .prompt([
+        {
+            type: 'list',
+            name: 'value',
+            pageSize: 10,
+            message: 'What terms yoy want to see?',
+            choices: Object.keys(enTerms)
+        }
+    ])
+    .then(answer => {
+        const path = enTerms[answer["value"]];
+        var htmlContent = getContent(path);
+        var stylesContent = getContent("data/styles/styles.css");
+        var styleWithTags = "<style>" + stylesContent + "</style>"
+        var metaInfo = "<meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\" />\n"
+        var htmlFile = styleWithTags + metaInfo + htmlContent;
+        http.createServer(function (request, response) {
+            response.writeHeader(200, {"Content-Type": "text/html"});
+            response.write(htmlFile);
+            response.end();
+        }).listen(8000);
+
+        open('http://localhost:8000/');
+    })
+    .catch(error => {
+        console.log("error");
+    });
+
+function getAllTerms(pathForFiles, object, dirName, language) {
+    if (dirName == null) {
+        dirName = pathForFiles;
+    }
+    const files = fs.readdirSync(pathForFiles);
+
+    files.forEach(fileName => {
+        const filePath = path.join(pathForFiles, fileName);
+        if (!object[dirName]) {
+            object[dirName] = {};
+        }
+        if (fileName.indexOf(html) === -1 && fileName.indexOf(json) === -1 && fileName.indexOf(css) === -1) {
+            getAllTerms(filePath, object, fileName, language);
+        } else if (fileName.indexOf("ja.html") !== -1 && language === jaLocale) {
+            object[dirName] = filePath;
+        } else if (fileName.indexOf("en.html") !== -1 && language === enLocale) {
+            object[dirName] = filePath;
+        } else if (fileName.indexOf(contentFileName) !== -1) {
+            object[dirName] = filePath;
+        }
+    })
+    Object.keys(object).forEach(value => {
+        if (typeof object[value] === typeof {}) {
+            delete object[value];
+        }
+    })
+    return object;
+
+}
+
+function getContent(filePath, encoding = "utf-8") {
+    if (!filePath) {
+        throw new Error("filePath required");
+    }
+    return fs.readFileSync(filePath, {encoding});
+}

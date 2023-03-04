@@ -1,0 +1,81 @@
+const path = require('path');
+const fs = require('fs');
+const enLocale = "en_US";
+const jaLocale = "ja_JP";
+const dataFolderName = "data"
+const listType = "List"
+const css = ".css"
+const json = ".json"
+const html = ".html"
+const contentFileName = "content.html"
+const contentKey = "termsConditionsContent"
+
+const enTerms = fillJson(dataFolderName, {}, null, enLocale);
+const jaTerms = fillJson(dataFolderName, {}, null, jaLocale);
+writeFile("terms_en.json", enTerms)
+writeFile("terms_ja.json", jaTerms)
+
+function getContent(filePath, encoding = "utf-8") {
+    if (!filePath) {
+        throw new Error("filePath required");
+    }
+    return fs.readFileSync(filePath, {encoding});
+}
+
+function sortTerms(object) {
+    Object.keys(object).forEach(value => {
+        if (value.indexOf(listType) !== -1) {
+            object[value] = Object.values(object[value]).sort(compareTerms);
+        } else {
+            if (typeof object[value] === typeof {} && Object.keys(object[value]).length !== 0) {
+                sortTerms(object[value]);
+            }
+        }
+    })
+    return object;
+}
+
+function compareTerms(a, b) {
+    return a.orderNumber - b.orderNumber;
+}
+
+function fillJson(pathForFiles, object, dirName, language) {
+    if (dirName == null) {
+        dirName = pathForFiles;
+    }
+    const files = fs.readdirSync(pathForFiles);
+
+    files.forEach(fileName => {
+        const filePath = path.join(pathForFiles, fileName);
+        if (!object[dirName]) {
+            object[dirName] = {};
+        }
+        if (fileName.indexOf(html) === -1 && fileName.indexOf(json) === -1 && fileName.indexOf(css) === -1) {
+            fillJson(filePath, object[dirName], fileName, language);
+        } else if (fileName.indexOf(json) !== -1) {
+            object[dirName] = JSON.parse(getContent(filePath))[language];
+        } else if (fileName.indexOf("ja.html") !== -1 && language === jaLocale) {
+            object[dirName][contentKey] = getContent(filePath);
+        } else if (fileName.indexOf("en.html") !== -1 && language === enLocale) {
+            object[dirName][contentKey] = getContent(filePath);
+        } else if (fileName.indexOf(contentFileName) !== -1) {
+            object[dirName][contentKey] = getContent(filePath);
+        } else if (fileName.indexOf(css) !== -1) {
+            object[dirName] = "<p><style type=\"text/css\">" + getContent(filePath) + "</style></p>";
+        }
+    })
+    return sortTerms(object).data;
+
+}
+
+function writeFile(filename, json) {
+    fs.writeFile(filename, JSON.stringify(json), 'utf8', function (err) {
+        if (err) {
+            console.log("An error occured while writing " + filename);
+            return console.log(err);
+        }
+        console.log(filename + "file has been saved.");
+    });
+}
+
+

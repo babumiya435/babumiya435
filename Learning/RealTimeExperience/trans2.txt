@@ -1,0 +1,152 @@
+const Excel = require('exceljs');
+const fs = require('fs');
+const readline = require('readline');
+
+const rl = readline.createInterface({
+    input: process.stdin,
+    output: process.stdout
+});
+
+const jsonEnFileName = 'translations_en.json';
+const jsonJaFileName = 'translations_ja.json';
+const excelFileName = 'Translations.xlsx';
+const portletsFolderPath = '../../../../presentation-layer/portlets';
+const sharedComponentsFolderPath = '../../../../presentation-layer/components/frontend/src/ng-main';
+const regExpForHTML = /['|"]\s*\|\s*translate\s?:\s*(("(.+?(?=(?<!\\)"))")|('(.+?(?=(?<!\\)'))'))/;
+const regExpForTS = /['|"],\s*(("(.+?(?=(?<!\\)"))")|('(.+?(?=(?<!\\)'))'))\)/;
+
+rl.question('Please enter a TMS ticket number? ', (TMSTicket) => {
+      convert(TMSTicket);
+});
+
+const checkFolder = (fullPath, translationInformation) => {
+    const folderContent = fs.readdirSync(fullPath);
+    folderContent.forEach(content => {
+        const newFullPath = fullPath + '/' + content;
+        if (fs.lstatSync(newFullPath).isDirectory()) {
+            checkFolder(newFullPath, translationInformation);
+        } else if (content.endsWith('.ts') || content.endsWith('.html')) {
+            checkFile(newFullPath, translationInformation);
+        }
+    });
+}
+
+const checkFile = (pathToFile, translationInformation) => {
+    const isHTMLFile = pathToFile.endsWith('html');
+    let isReplaced = false;
+    let data = fs.readFileSync(pathToFile, 'utf8');
+    if (isHTMLFile) {
+        translationInformation.forEach(translationValue => {
+            const matchingValue = data.match(translationValue.htmlRegexpSearchValue);
+            if (matchingValue) {
+                const replaceValue = translationValue.replaceValue.replace(/(?<!\\)'/g, "\\'").replace(/(?<!\\)"/g, '\\"');
+                const newValue = '\'' + translationValue.key + '\' | translate: \'' + replaceValue + '\'';
+                data = data.replace(new RegExp(translationValue.htmlRegexpSearchValue, 'g'), newValue);
+                isReplaced = true;
+            }
+        });
+    } else {
+        translationInformation.forEach(translationValue => {
+            const matchingValue = data.match(translationValue.tsRegexpSearchValue);
+            if (matchingValue) {
+                const replaceValue = translationValue.replaceValue.replace(/(?<!\\)"/g, '\\"');
+                const newValue = 'transform(\"' + translationValue.key + '\", \"' + replaceValue + '\")';
+                data = data.replace(new RegExp(translationValue.tsRegexpSearchValue, 'g'), newValue);
+                isReplaced = true;
+            }
+        });
+    }
+    if (isReplaced) {
+        fs.writeFileSync(pathToFile, data, 'utf8', err => {
+            if (err) {
+                console.log(err);
+            }
+        });
+    }
+}
+
+const replaceDefaultValues = (defaultValues) => {
+    const translationInformation = [];
+    for (let i = 0; i < defaultValues.length; i++) {
+        if (defaultValues[i].replaceValue.includes('{') || defaultValues[i].originalValue.includes('{')) {
+            console.log(defaultValues[i].key + ' has to be updated manually, because it contains parameters');
+            continue;
+        }
+        if (defaultValues[i].replaceValue.includes('<') || defaultValues[i].originalValue.includes('<')) {
+            console.log(defaultValues[i].key + ' has to be updated manually, because it contains inner html or links');
+            continue;
+        }
+        translationInformation.push(
+            {
+                key: defaultValues[i].key,
+                replaceValue: defaultValues[i].replaceValue,
+                htmlRegexpSearchValue: '[\'|"]' + defaultValues[i].key + regExpForHTML.source,
+                tsRegexpSearchValue: 'transform[(][\'|"]' + defaultValues[i].key + regExpForTS.source
+            }
+        );
+    }
+    console.log(translationInformation);
+    checkFolder(portletsFolderPath, translationInformation);
+    checkFolder(sharedComponentsFolderPath, translationInformation);
+    console.log('Updating default values was finished');
+    console.log('Please double check all updated default values');
+}
+
+const writeFile = (filename, json) => {
+    fs.writeFileSync(filename, JSON.stringify(json) + '\n', 'utf8', function (err) {
+        if (err) {
+            console.log("An error occurred while writing " + filename);
+            return console.log(err);
+        }
+    });
+};
+
+const convert = (ticketNumber) => {
+    const workbook = new Excel.Workbook();
+    let jsonEn = readJsonFile(jsonEnFileName);
+    let jsonJa = readJsonFile(jsonJaFileName);
+    const newDefaultValues = [];
+    workbook.xlsx.readFile(excelFileName)
+        .then(function () {
+            const worksheetEn = workbook.getWorksheet(1);
+            const worksheetJa = workbook.getWorksheet(2);
+            worksheetEn._rows.forEach(value => {
+                if (value.getCell(1).style.fill && value.getCell(1).style.fill.bgColor && value.getCell(1).style.fill.fgColor.argb) {
+                    const translationKey = value.getCell(1).text;
+                    const translationValue = value.getCell(2).text;
+                    const externalTicket = value.getCell(4).text ? value.getCell(4).text : "";
+                    newDefaultValues.push({
+                        key: translationKey,
+                        replaceValue: translationValue,
+                        originalValue: jsonEn[translationKey].translate
+                    });
+                    jsonEn[translationKey] = {
+                        "translate": translationValue,
+                        "description": ticketNumber,
+                        "externalTicket": externalTicket
+                    }
+                }
+            });
+            worksheetJa._rows.forEach(value => {
+                if (value.getCell(1).style.fill && value.getCell(1).style.fill.bgColor && value.getCell(1).style.fill.fgColor.argb) {
+                    jsonJa[value.getCell(1).text] = {
+                        "translate": value.getCell(2).text,
+                        "description": ticketNumber,
+                        "externalTicket": externalTicket
+                    }
+                }
+            });
+            writeFile(jsonEnFileName, jsonEn);
+            writeFile(jsonJaFileName, jsonJa);
+            replaceDefaultValues(newDefaultValues);
+            console.log("Translations successfully saved");
+            rl.close();
+        })
+};
+
+
+const readJsonFile = (filename) => {
+    const rawData = fs.readFileSync(filename);
+    return JSON.parse(rawData);
+};
+
