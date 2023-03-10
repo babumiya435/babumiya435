@@ -1,6 +1,6 @@
 HTML:
 
-1.Semantic tags in html.
+1.Semantic tags in html.(making web application in strucured way)
 
 	https://www.w3schools.com/html/html5_semantic_elements.asp
 	Examples of non-semantic elements: <div> and <span> - Tells nothing about its content.
