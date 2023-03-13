@@ -1,0 +1,80 @@
+https://codesandbox.io/s/quirky-khayyam-donmoq?file=/src/App.js
+
+import "./styles.css";
+import React, { useState } from "react";
+
+export default function App() {
+  const [count, setCount] = useState(0);
+  return (
+    <div className="App">
+      <h1>Hello CodeSandbox</h1>
+      <h2>Start editing to see some magic happen!</h2>
+      <button onClick={() => setCount(count + 1)}>Increment</button>
+      <button onClick={() => setCount(count - 1)}>Decrement</button>
+      <h1>{count}</h1>
+    </div>
+  );
+}
+
+
+https://jsfiddle.net/gojvnb48/11/
+
+const obj = { 
+    a: { 
+        num: 1,
+        a: { 
+            num: 2, 
+            a: { 
+                num: 3, 
+                a: { 
+                    num: 4 
+                } 
+            } 
+        } 
+    } 
+};
+
+const sum = (obj) => {
+		/* if(!obj){
+		      return 0;
+		    }
+		    console.log(obj)
+		    return obj.num + sum(obj.a) ; */
+   let ans = 0;
+   while(obj){
+   		ans = ans + obj.num;
+      obj = obj.a;
+   }
+   return ans;
+} // Return sum num`s - 10 for obj
+
+console.log(sum(obj.a));
+
+https://jsfiddle.net/3acf842p/2/
+
+const arr = [1, 1, 2, 2, 3, 4, 5, 5];
+let removeDuplicates = function(arr){
+	/* let unique = [];
+	  if(arr.length === 0) {return "empty array provided"};
+	  for(let i = 0; i < arr.length; i++){
+	    if(unique.indexOf(arr[i]) === -1){
+	          unique.push(arr[i]);
+	    }
+	  } */
+    let set = new Set(arr);
+  return [...set];
+}
+
+console.log(removeDuplicates(arr));
+
+https://jsfiddle.net/cs1e2opq/27/
+
+.container{
+  display:flex;
+  justify-content: center;
+  align-items:center;
+  height: 100%;
+}
+body {
+  height: 100%;
+}
