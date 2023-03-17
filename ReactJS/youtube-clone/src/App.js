@@ -1,23 +1,21 @@
-import logo from './logo.svg';
 import './App.css';
+import { Button, TextField } from '@material-ui/core';
+import AccountCircle from '@material-ui/icons/AccountCircle';
+import Header from './Header';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div>
+        <Header/>
+      </div>
+      <div className='Container'>
+        <TextField id="outlined-basic" label="Name" variant="outlined" />
+        <Button color="primary" variant="contained"> Press me </Button> 
+      </div>
+      <div>
+        <AccountCircle/>
+      </div>
     </div>
   );
 }
