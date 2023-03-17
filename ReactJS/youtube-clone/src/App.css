@@ -4,7 +4,7 @@
   flex-direction: column;
   gap: 2rem;
 }
-.Container {
+.container {
   display: flex;
   justify-content: center;
   align-items: center;

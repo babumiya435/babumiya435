@@ -9,7 +9,7 @@ function App() {
       <div>
         <Header/>
       </div>
-      <div className='Container'>
+      <div className='container'>
         <TextField id="outlined-basic" label="Name" variant="outlined" />
         <Button color="primary" variant="contained"> Press me </Button> 
       </div>
