@@ -1,0 +1,16 @@
+	
+
+
+	:(Learning):
+
+	1.What to learn? - (any concept/question)
+	2.Why to learn? - (what problem it solves,other ways,best ways)
+	3.How to learn? - (theory/video/blogs/coaching)
+	4.How much to learn? - (interview/project)
+	5.How to remember/example project implementation of learning? - (include in sample projects/create specific files/code)
+	6.How to test learning? - (quiz/code/analyze-problems-solutuions)
+	7.How/How much to answer in interview? - (use as much as technical terms)
+	
+	
+	
+	
