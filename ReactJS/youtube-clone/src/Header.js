@@ -5,7 +5,7 @@ function Header() {
     return (
         <AppBar position='static'>
             <Toolbar>
-                <Typography>React Navbar Example</Typography>
+                <Typography>Youtube Clone</Typography>
             </Toolbar>
         </AppBar>
     );

@@ -10,10 +10,11 @@ function App() {
         <Header/>
       </div>
       <div className='container'>
-        <TextField id="outlined-basic" label="Name" variant="outlined" />
-        <Button color="primary" variant="contained"> Press me </Button> 
+        <TextField id="outlined-basic" label="User Name" variant="outlined" />
+        <TextField id="outlined-basic" label="Password" variant="outlined" />
+        <Button color="primary" variant="contained"> Log In </Button> 
       </div>
-      <div>
+      <div className='signInIcon'>
         <AccountCircle/>
       </div>
     </div>
