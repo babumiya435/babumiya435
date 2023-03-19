@@ -10,7 +10,40 @@
 	5.How to remember/example project implementation of learning? - (include in sample projects/create specific files/code)
 	6.How to test learning? - (quiz/code/analyze-problems-solutuions)
 	7.How/How much to answer in interview? - (use as much as technical terms)
-	
+
+	1.ReactJS
+	2.babel
+	3.virtual DOM + JSX + TSX
+	4.class based components vs functional components
+	5.State in react(setState and useState)
+	6.Props
+	7.Callback between parent and child for data transfer
+	8.React Dom render and react createElement
+	9.Component life cycle methods
+	10.Hooks- useState,useEffect,useContext,useReducer,useCallback,useRef,useSelector,useMemo
+	11.Context
+	12.Router
+	13.HOC
+	14.React Portals
+	15.What is Redux
+	16.Store
+	17.Reducer and root reducer
+	18.Action
+	19.Dispatch
+	20.Redux-saga
+	21.Connect to update store/fetch data from store
+	22.Antd/Bootstrap/materialUI/tailwind
+
+
+
+
+
+
+
+
+
+
+
 	
 	
 	
