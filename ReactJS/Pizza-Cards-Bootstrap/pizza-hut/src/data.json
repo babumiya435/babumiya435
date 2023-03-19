@@ -1,0 +1,23 @@
+[
+    {
+        "id": 1,
+        "name": "Sameer",
+        "image": "src/images/pizza.jpg",
+        "description": "This is an amazing pizza made up of delicious ingridiants like toppins,veggies etc.",
+        "price": 100
+    },
+    {
+        "id": 2,
+        "name": "Niddu",
+        "image": "/images/pizza.jpg",
+        "description": "This is an amazing pizza made up of delicious ingridiants like toppins,veggies etc.",
+        "price": 100
+    },
+    {
+        "id": 3,
+        "name": "Babu",
+        "image": "/images/pizza.jpg",
+        "description": "This is an amazing pizza made up of delicious ingridiants like toppins,veggies etc.",
+        "price": 100
+    }
+]
