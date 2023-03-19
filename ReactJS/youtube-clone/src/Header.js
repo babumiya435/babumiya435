@@ -1,11 +1,10 @@
-import React from "react";
 import {AppBar, Toolbar, Typography} from '@material-ui/core';
 
 function Header() {
     return (
         <AppBar position='static'>
             <Toolbar>
-                <Typography>Youtube Clone</Typography>
+                <Typography>REACT IS NOT A JS FRAMEROEK IT IS JS LIBRARY</Typography>
             </Toolbar>
         </AppBar>
     );

@@ -2,6 +2,7 @@ import './App.css';
 import { Button, TextField } from '@material-ui/core';
 import AccountCircle from '@material-ui/icons/AccountCircle';
 import Header from './Header';
+import Blog from './Blog';
 
 function App() {
   return (
@@ -17,7 +18,11 @@ function App() {
       <div className='signInIcon'>
         <AccountCircle/>
       </div>
+      <div>
+        <Blog />
+      </div>
     </div>
+    
   );
 }
 
