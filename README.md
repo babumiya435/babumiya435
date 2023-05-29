@@ -5,7 +5,7 @@
 Here are some ideas to get you started: -->
 
 <div align="center">
-  <img src ="./banner.png" />
+  <img src ="https://i.pinimg.com/originals/18/a4/94/18a4949fc9c8067172d3b96e302e7097.gif" height="250" />
   
 </div>
 
