@@ -31,6 +31,8 @@ Here are some ideas to get you started: -->
 
 - ⚡ Fun fact: I invest most of my time in coding :sweat_smile:
 
+- ⚡ Some Awsome Product Ideas: I invest most of my time in coding :sweat_smile: <a href="https://docs.google.com/presentation/d/19LnB58grN-PKnaVT2oNeCsXxWfHkVzKscaJotmKEuFw/edit#slide=id.gf41345ceb6_0_0" target="_blank"><img alt="Product Ideas" src="https://img.shields.io/badge/babumiya.tech-9146FF.svg?&style=for-the-badge&logo=appveyor&logoColor=white" height="30px" /></a>
+
 ## 🛠️ Technologies and Tools I use:
 
 <p>
