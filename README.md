@@ -25,11 +25,11 @@ Here are some ideas to get you started: -->
 
 - 🤔 I’m looking for help with `Competitive Programming`
 
-- 💬 Ask me about anything, Except My Salary :sweat_smile:
+- 💬 Ask me about anything :sweat_smile:
 
 - 👨‍💻 Life Hack: Learn new tech :fire: and share the learnings :tada:
 
-- ⚡ Fun fact: I waste most of my time waching movies
+- ⚡ Fun fact: I invest most of my time in coding :sweat_smile:
 
 ## 🛠️ Technologies and Tools I use:
 
