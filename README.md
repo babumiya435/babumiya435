@@ -31,7 +31,7 @@ Here are some ideas to get you started: -->
 
 - ⚡ Fun fact: I invest most of my time in coding :fire:
 
-- ⚡ Content Creation: I invest some of my time in creating youtube tech content <span style="margin-top:5px"><a style="margin-top:5px" href="https://docs.google.com/presentation/d/19LnB58grN-PKnaVT2oNeCsXxWfHkVzKscaJotmKEuFw/edit#slide=id.gf41345ceb6_0_0" target="_blank"><img alt="Youtube Channel" src="https://img.shields.io/badge/YouTube Channel-FF0000?style=for-the-badge&logo=youtube&logoColor=white" height="30px" /></a></span>
+- ⚡ Content Creation: I invest some of my time in creating youtube tech content <span style="margin-top:5px"><a style="margin-top:5px" href="https://www.youtube.com/channel/UCdmJ52LdmWRHCQN0h2rs4tA" target="_blank"><img alt="Youtube Channel" src="https://img.shields.io/badge/YouTube Channel-FF0000?style=for-the-badge&logo=youtube&logoColor=white" height="30px" /></a></span>
 
 - ⚡ Some Awsome Product Ideas: I invest most of my time in coding <span style="margin-top:5px"></span><a href="https://docs.google.com/presentation/d/19LnB58grN-PKnaVT2oNeCsXxWfHkVzKscaJotmKEuFw/edit#slide=id.gf41345ceb6_0_0" target="_blank"><img alt="Product Ideas" src="https://img.shields.io/badge/product.ideas-9146FF.svg?&style=for-the-badge&logo=appveyor&logoColor=white" height="30px" /></a>
 
