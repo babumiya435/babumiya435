@@ -2,7 +2,7 @@
 
 
 **babumiya435/babumiya435** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-Here are some ideas to get you started: 
+<!-- Here are some ideas to get you started:  -->
 
 <div align="center">
   <img src ="https://i.pinimg.com/originals/18/a4/94/18a4949fc9c8067172d3b96e302e7097.gif" height="250" />
