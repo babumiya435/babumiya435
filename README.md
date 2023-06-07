@@ -15,7 +15,7 @@
 
 <img  src="./thoughtworks-gif_dribbble.gif" height="290px" align="right" />
 
-- 🙋‍♂️ All about me is at **[My Website](https://babumiya.vercel.app/)** which is currently in progress 🙋‍♂️
+- 🙋‍♂️ All about me is at **[My Website](https://babumiya.vercel.app/)** which is currently in progress and first version will be completed today EOD 🙋‍♂️
 
 - 🔭 I’m currently working on `Building Something Intresting`.
 
