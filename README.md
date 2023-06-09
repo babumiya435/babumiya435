@@ -15,7 +15,7 @@
 
 <img  src="./thoughtworks-gif_dribbble.gif" height="290px" align="right" />
 
-- 🙋‍♂️ All about me is at :  **[My Website](https://babumiya.vercel.app/)** which is currently in progress and the first version will be ready by 09-06-2023 10:30 AM. 🙋‍♂️
+- 🙋‍♂️ All about me is at :  **[My Website](https://babumiya.vercel.app/)** which is currently in progress and the first version will be ready by 09-06-2023 10:30 PM. 🙋‍♂️
 
 - 🔭 I’m currently working on `Building Something Intresting`.
 
