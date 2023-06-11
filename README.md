@@ -17,7 +17,7 @@
 
 - 🙋‍♂️ All about me is at :  **[My Website](https://babumiya.vercel.app/)** which is currently in progress and the first version will be ready by 10-06-2023 10:30 PM.
 
-- 🔭 I’m currently working on `Building Something Intresting`.
+- 🔭 I’m currently working on `Building Something Intresting`
 
 - 🌱 I’m currently learning `Full Stack`
 
@@ -27,7 +27,7 @@
 
 - 💬 Ask me about anything :sweat_smile:
 
-- 👨‍💻 Life Hack: Learn new tech :fire: and share the learnings :tada:
+- 👨‍💻 Life Hack: Learn new tech :fire: and share the learnings
 
 - ⚡ Fun fact: I invest most of my time in coding :fire:
 
