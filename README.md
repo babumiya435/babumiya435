@@ -1,5 +1,5 @@
 <h1 align="center">Hello<img src="https://raw.githubusercontent.com/ABSphreak/ABSphreak/master/gifs/Hi.gif" width="30px" height="60px"> I'm Mohammad Babu Miya</h1>
-testing the stream2
+testing the stream3
 
 
 **babumiya435** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
@@ -16,7 +16,7 @@ testing the stream2
 
 <img  src="./thoughtworks-gif_dribbble.gif" height="290px" align="right" />
 
-- 🙋‍♂️ All about me is at :  **[My Website](https://babumiya.vercel.app/)** which is currently in progress and the first version will be ready by 10-06-2023 10:30 PM.
+- 🙋‍♂️ All about me is at :  **[My Website](https://babumiya.vercel.app/)** which is currently in progress and the first version will be ready by 17-06-2023 10:30 PM.
 
 - 🔭 I’m currently working on `Building Something Intresting`
 
