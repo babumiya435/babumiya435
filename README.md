@@ -1,6 +1,6 @@
 <h1 align="center">Hello<img src="https://raw.githubusercontent.com/ABSphreak/ABSphreak/master/gifs/Hi.gif" width="30px" height="60px"> I'm Mohammad Babu Miya</h1>
 
-Updated : **29 Aug 2023**.
+Updated : **30 Aug 2023**.
 
 
 **babumiya435** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
