@@ -83,4 +83,5 @@ Updated : **10 Jan 2024**.
 
 <div align="center">
   <img align="center" src="https://github-readme-stats.anuraghazra1.vercel.app/api?username=babumiya435&show_icons=true" />
+  <img align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=babumiya435&" alt="babumiya" />
 </div>
