@@ -87,6 +87,6 @@ Updated : **08-April-2024**.
 ## 📊 My GitHub Data:
 
 <div align="center">
-  <img align="center" src="https://github-readme-stats.anuraghazra1.vercel.app/api?username=adila6&show_icons=true" />
-  <img align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=adila6&" alt="babumiya" />
+  <img align="center" src="https://github-readme-stats.anuraghazra1.vercel.app/api?username=babumiya435&show_icons=true" />
+  <img align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=babumiya435&" alt="babumiya" />
 </div>
