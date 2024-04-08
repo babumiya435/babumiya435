@@ -17,7 +17,7 @@ Updated : **08-April-2024**.
 
 <img  src="./thoughtworks-gif_dribbble.gif" height="290px" align="right" />
 
-- 🙋‍♂️ All about me is at :  **[My Portfolio Website](https://babumiya.vercel.app/)**
+- 🙋‍♂️ My Profie Portfolio Website :  **[My Portfolio Website](https://babumiya.vercel.app/)**
 
 - 🔭 I’m currently working on `Building Something Intresting`
 
